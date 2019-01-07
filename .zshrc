@@ -41,7 +41,7 @@ alias cfg='/usr/bin/git --git-dir=/Users/caleb/.cfg-dotfiles/ --work-tree=/Users
 alias cfgloga='cfg log --oneline --decorate --graph --all'
 alias hidepaths='defaults write com.apple.finder _FXShowPosixPathInTitle -bool false; killall Finder'
 alias imagemin="node ~/Scripts/imagemin.js"
-alias jsfast='bundle exec jekyll serve --watch --incremental --limit_posts 1'
+alias jsfast='bundle exec jekyll serve --watch --limit_posts 1'
 alias jsslow='bundle exec jekyll serve --watch --config _config_dev.yml'
 alias sasswatch='sass --watch scss:css --style compressed'
 alias showpaths='defaults write com.apple.finder _FXShowPosixPathInTitle -bool true; killall Finder'
