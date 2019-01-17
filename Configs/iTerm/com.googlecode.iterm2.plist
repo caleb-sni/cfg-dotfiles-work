@@ -224,7 +224,7 @@
 		</dict>
 	</dict>
 	<key>Default Bookmark Guid</key>
-	<string>3C2B7F2C-E36A-4AE4-B372-77B3F77A8143</string>
+	<string>11EF08FF-0800-4C82-B239-77175F6B776F</string>
 	<key>HotkeyMigratedFromSingleToMulti</key>
 	<true/>
 	<key>LoadPrefsFromCustomFolder</key>
@@ -278,11 +278,11 @@
 	<key>NSWindow Frame SessionsPreferences</key>
 	<string>466 229 606 469 0 0 1440 877 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>-1268 872 918 512 -2560 -33 2560 1417 </string>
+	<string>442 334 918 514 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>-1575 247 1440 877 -2560 -33 2560 1417 </string>
+	<string>0 66 1439 811 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>0 10 1453 867 0 0 1440 877 </string>
+	<string>-553 900 1453 937 -553 900 2560 1417 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -926,6 +926,8 @@
 		<dict>
 			<key>ASCII Anti Aliased</key>
 			<true/>
+			<key>ASCII Ligatures</key>
+			<true/>
 			<key>Ambiguous Double Width</key>
 			<false/>
 			<key>Ansi 0 Color</key>
@@ -1562,6 +1564,8 @@
 			<string>/Users/caleb</string>
 		</dict>
 	</array>
+	<key>NoSyncHaveRequestedFullDiskAccess</key>
+	<true/>
 	<key>NoSyncHaveUsedCopyMode</key>
 	<true/>
 	<key>NoSyncHaveWarnedAboutPasteConfirmationChange</key>
@@ -1624,7 +1628,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2018-05-10T12:30:56Z</date>
+	<date>2019-01-09T17:25:18Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>Secure Input</key>
@@ -1632,7 +1636,7 @@
 	<key>WordCharacters</key>
 	<string>/-+\~_.</string>
 	<key>iTerm Version</key>
-	<string>3.1.6</string>
+	<string>3.2.6</string>
 	<key>kCPKSelectionViewPreferredModeKey</key>
 	<integer>0</integer>
 	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>
