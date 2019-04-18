@@ -21,7 +21,7 @@ brew "libtool"
 brew "imagemagick"
 brew "libksba"
 brew "libyaml"
-brew "macvim"
+brew "macvim", link: false
 brew "mapnik"
 brew "mas"
 brew "mongodb"
@@ -44,7 +44,7 @@ brew "tree"
 brew "vim"
 brew "watchman"
 brew "yarn"
-brew "youtube-dl"
+brew "youtube-dl", link: false
 brew "z"
 brew "zsh"
 brew "zsh-completions"
@@ -59,8 +59,9 @@ cask "java8"
 cask "slack"
 cask "spotify"
 cask "visual-studio-code"
-mas "Alfred", id: 405843582
-mas "Amphetamine", id: 937984704
-mas "Boom 2", id: 948176063
+mas "", id: 775737590
+mas "", id: 937984704
+mas "", id: 948176063
+mas "", id: 405843582
 mas "Pages", id: 409201541
 mas "Xcode", id: 497799835
