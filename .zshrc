@@ -36,6 +36,7 @@ export SSH_KEY_PATH="~/.ssh/id_rsa"
 # #====================  ALIASES  ====================
 alias bbd='brew bundle dump -f'
 alias be='bundle exec'
+alias begen='bundle exec ./generate'
 alias c='clear'
 alias cfg='/usr/bin/git --git-dir=/Users/caleb/.cfg-dotfiles/ --work-tree=/Users/caleb'
 alias cfgloga='cfg log --oneline --decorate --graph --all'
