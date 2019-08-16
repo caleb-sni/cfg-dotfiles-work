@@ -23,8 +23,6 @@ HIST_STAMPS="yyyy-mm-dd"
 plugins=(git brew chucknorris npm osx rand-quote web-search)
 
 
-#====================  ALIASES  ====================
-
 source $HOME/.bash_profile
 source $ZSH/oh-my-zsh.sh
 
@@ -61,13 +59,13 @@ alias gohome='~ && ls -la'
 alias notes='cd ~/Projects/Notes && code .'
 
 #====================    NVM    ====================
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+# export NVM_DIR="$HOME/.nvm"
+# [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+# [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 
 #====================    RBENV    ====================
-eval "$(rbenv init -)"
+# eval "$(rbenv init -)"
 
 
 #====================    TODOOZ    ====================
