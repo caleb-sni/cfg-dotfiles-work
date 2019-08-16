@@ -58,19 +58,5 @@ alias tp='trash-put'
 alias gohome='~ && ls -la'
 alias notes='cd ~/Projects/Notes && code .'
 
-#====================    NVM    ====================
-# export NVM_DIR="$HOME/.nvm"
-# [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-# [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
-
-#====================    RBENV    ====================
-# eval "$(rbenv init -)"
-
-
-#====================    TODOOZ    ====================
-# TODO - Move aliases to ZSH_CUSTOM folder ???
-# TODO - Move plugins to ~/.oh-my-zsh/custom/plugins/ ???
-
 . /usr/local/opt/asdf/asdf.sh
 . /usr/local/opt/asdf/etc/bash_completion.d/asdf.bash
