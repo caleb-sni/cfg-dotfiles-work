@@ -33,8 +33,6 @@ export SSH_KEY_PATH="~/.ssh/id_rsa"
 
 # #====================  ALIASES  ====================
 alias bbd='brew bundle dump -f'
-alias be='bundle exec'
-alias begen='bundle exec ./generate'
 alias c='clear'
 alias cfg='/usr/bin/git --git-dir=/Users/caleb/.cfg-dotfiles/ --work-tree=/Users/caleb'
 alias cfgloga='cfg log --oneline --decorate --graph --all'
@@ -42,6 +40,7 @@ alias hidepaths='defaults write com.apple.finder _FXShowPosixPathInTitle -bool f
 alias jsfast='bundle exec jekyll serve --watch --limit_posts 1'
 alias jsslow='make clean && bundle exec jekyll serve --watch --config _config_dev.yml --incremental --future'
 alias jserve='bundle exec jekyll serve'
+alias jstart='./start'
 alias notes='cd ~/Projects/Notes && code .'
 alias sasswatch='sass --watch scss:css --style compressed'
 alias showpaths='defaults write com.apple.finder _FXShowPosixPathInTitle -bool true; killall Finder'
