@@ -64,7 +64,6 @@ cask "google-chrome"
 cask "iterm2"
 cask "java8"
 cask "slack"
-cask "spotify"
 cask "visual-studio-code"
 mas "Alfred", id: 405843582
 mas "Amphetamine", id: 937984704

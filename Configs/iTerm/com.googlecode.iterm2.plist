@@ -293,7 +293,7 @@
 	<key>NSWindow Frame SharedPreferences</key>
 	<string>291 402 1018 447 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 0 1437 877 0 0 1440 877 </string>
+	<string>0 0 1440 877 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>0 0 1440 877 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
@@ -462,9 +462,9 @@
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.12156862745098039</real>
-				<key>Red Component</key>
 				<real>0.11372549019607843</real>
+				<key>Red Component</key>
+				<real>0.10196078431372549</real>
 			</dict>
 			<key>Background Image Location</key>
 			<string></string>
@@ -1960,7 +1960,7 @@
 	<key>NoSyncInstallationId</key>
 	<string>C7FCA4E1-B069-43D5-B998-3DB27B168E43</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>44</integer>
+	<integer>45</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -2719,7 +2719,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2019-09-17T12:31:19Z</date>
+	<date>2019-09-18T12:31:20Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SUUpdateRelaunchingMarker</key>
