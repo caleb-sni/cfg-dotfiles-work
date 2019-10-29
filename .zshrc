@@ -60,3 +60,4 @@ alias notes='cd ~/Projects/Notes && code .'
 
 . /usr/local/opt/asdf/asdf.sh
 . /usr/local/opt/asdf/etc/bash_completion.d/asdf.bash
+export PATH="/usr/local/sbin:$PATH"
