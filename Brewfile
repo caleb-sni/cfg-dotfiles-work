@@ -66,5 +66,3 @@ cask "iterm2"
 cask "java8"
 cask "slack"
 cask "visual-studio-code"
-mas "Boom 2", id: 948176063
-mas "iA Writer", id: 775737590
