@@ -66,3 +66,7 @@ cask "java8"
 cask "slack"
 cask "visual-studio-code"
 cask "wkhtmltopdf"
+mas "Boom 2", id: 948176063
+mas "iA Writer", id: 775737590
+mas "Pages", id: 409201541
+mas "Xcode", id: 497799835
