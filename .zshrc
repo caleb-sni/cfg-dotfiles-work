@@ -36,6 +36,8 @@ alias bbd='brew bundle dump -f'
 alias c='clear'
 alias cfg='/usr/bin/git --git-dir=/Users/caleb/.cfg-dotfiles/ --work-tree=/Users/caleb'
 alias cfgloga='cfg log --oneline --decorate --graph --all'
+alias fulcrum='cd ~/Projects/fulcrum && open fulcrum.code-workspace'
+alias fulcrumapp='cd ~/Projects/fulcrumapp.com && code .'
 alias hidepaths='defaults write com.apple.finder _FXShowPosixPathInTitle -bool false; killall Finder'
 alias jsfast='bundle exec jekyll serve --watch --limit_posts 1'
 alias jsslow='make clean && bundle exec jekyll serve --watch --config _config_dev.yml --incremental --future'
@@ -56,7 +58,7 @@ touch_open() {
 alias lsa='ls -a'
 alias tp='trash-put'
 alias gohome='~ && ls -la'
-alias notes='cd ~/Projects/Notes && code .'
+alias writer='cd /Users/caleb/Library/Mobile\ Documents/27N4MQEA55~pro~writer/Documents && code .'
 
 . /usr/local/opt/asdf/asdf.sh
 . /usr/local/opt/asdf/etc/bash_completion.d/asdf.bash
