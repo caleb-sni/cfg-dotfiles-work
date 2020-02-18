@@ -30,7 +30,7 @@ brew "gnupg"
 brew "hub"
 brew "imagemagick@6", link: true
 brew "libxslt"
-brew "postgresql", restart_service: true
+brew "postgresql"
 brew "mapnik"
 brew "mas"
 brew "mysql"
@@ -66,7 +66,7 @@ cask "java8"
 cask "slack"
 cask "visual-studio-code"
 cask "wkhtmltopdf"
-mas "Boom 2", id: 948176063
 mas "iA Writer", id: 775737590
 mas "Pages", id: 409201541
+mas "Smart Countdown Timer", id: 1410709951
 mas "Xcode", id: 497799835
