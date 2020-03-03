@@ -30,7 +30,7 @@ brew "gnupg"
 brew "hub"
 brew "imagemagick@6", link: true
 brew "libxslt"
-brew "postgresql"
+brew "postgresql", restart_service: true
 brew "mapnik"
 brew "mas"
 brew "mysql"
