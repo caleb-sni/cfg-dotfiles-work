@@ -66,7 +66,10 @@ cask "java8"
 cask "slack"
 cask "visual-studio-code"
 cask "wkhtmltopdf"
+mas "Airmail", id: 918858936
+mas "Fantastical", id: 975937182
 mas "iA Writer", id: 775737590
 mas "Pages", id: 409201541
 mas "Smart Countdown Timer", id: 1410709951
+mas "Trello", id: 1278508951
 mas "Xcode", id: 497799835
