@@ -38,6 +38,7 @@ alias cfg='/usr/bin/git --git-dir=/Users/caleb/.cfg-dotfiles/ --work-tree=/Users
 alias cfgloga='cfg log --oneline --decorate --graph --all'
 alias fulcrum='cd ~/Projects/fulcrum && open fulcrum.code-workspace'
 alias fulcrumapp='cd ~/Projects/fulcrumapp.com && code .'
+alias gs='git switch'
 alias hidepaths='defaults write com.apple.finder _FXShowPosixPathInTitle -bool false; killall Finder'
 alias jsfast='bundle exec jekyll serve --watch --limit_posts 1'
 alias jsslow='make clean && bundle exec jekyll serve --watch --config _config_dev.yml --incremental --future'
