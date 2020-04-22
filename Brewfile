@@ -15,7 +15,7 @@ brew "openssl@1.1"
 brew "readline"
 brew "unixodbc"
 brew "asdf"
-brew "gettext"
+brew "gettext", link: false
 brew "sqlite"
 brew "python"
 brew "cmake"
@@ -68,6 +68,7 @@ cask "slack"
 cask "visual-studio-code"
 cask "wkhtmltopdf"
 mas "Airmail", id: 918858936
+mas "Be Focused", id: 973134470
 mas "Fantastical", id: 975937182
 mas "iA Writer", id: 775737590
 mas "Pages", id: 409201541
