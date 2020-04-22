@@ -6,6 +6,6 @@ rm -rf fonts
 
 echo ""
 echo ""
-echo ""
-echo "=====               Next: Install NVM?               ====="
-echo "===== curl -Lks http://bit.do/cfsanderson-nvm | bash ====="
+echo "=====       May need to install node here (asdf?)    ====="
+echo "=====         Next: install NPM dependencies?        ====="
+echo "===== curl -Lks http://bit.do/cfsanderson-npm | bash ====="

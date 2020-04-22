@@ -16,12 +16,19 @@ These install scripts are daisy-chained together using `bit.do` shortened urls t
   - probably will backup existing .zshrc file and will need to delete new and return backup to original name.
 7. http://bit.do/cfsanderson-powerline
   - installs the Powerline fonts (Cousine)
-8. http://bit.do/cfsanderson-nvm
-  - installs node and nvm - last command should output simply 'nvm' as a test
-9. http://bit.do/cfsanderson-npm
+  - may need to install `node` next with `asdf`
+8. http://bit.do/cfsanderson-npm
   - installs any npm packages (like nodemon and trash CLI)
-10. http://bit.do/cfsanderson-rbenv
+9. http://bit.do/cfsanderson-ssh
+  - generate new SSH keys and give instructions for how to sync with Github.
+
+Somewhere in there should have installed the latest Brewfile so `bundle install` from there.
+
+-----
+**DEPRECATED:**
+- http://bit.do/cfsanderson-nvm
+  - installs node and nvm - last command should output simply 'nvm' as a test
+
+- http://bit.do/cfsanderson-rbenv
   - installs rbenv for a ruby manager
   - this assumes that rbenv has already been installed via Homebrew earlier
-11. http://bit.do/cfsanderson-ssh
-  - generates new SSH keys and give instructions for how to sync with Github.
