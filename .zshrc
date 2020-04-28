@@ -43,13 +43,12 @@ alias gs='git switch'
 alias hidepaths='defaults write com.apple.finder _FXShowPosixPathInTitle -bool false; killall Finder'
 alias jsfast='bundle exec jekyll serve --watch --limit_posts 1'
 alias jsslow='make clean && bundle exec jekyll serve --watch --config _config_dev.yml --incremental --future'
-alias jserve='bundle exec jekyll serve'
-alias jstart='./start'
 alias lsa='ls -a'
 alias lsl='ls -l'
 alias notes='cd ~/Projects/NOTES && code .'
 alias sasswatch='sass --watch scss:css --style compressed'
 alias showpaths='defaults write com.apple.finder _FXShowPosixPathInTitle -bool true; killall Finder'
+alias sni='cd ~/Projects/spatialnetworks.com && code .'
 alias st='speedtest'
 alias to=touch_open
 touch_open() {
@@ -65,4 +64,3 @@ alias writer='cd /Users/caleb/Library/Mobile\ Documents/27N4MQEA55~pro~writer/Do
 . /usr/local/opt/asdf/asdf.sh
 . /usr/local/opt/asdf/etc/bash_completion.d/asdf.bash
 export PATH="/usr/local/sbin:$PATH"
-export DOCKER_PG=1
