@@ -2,40 +2,29 @@
 #============    @cfsanderson .zshrc   ===============
 #=====================================================
 export ZSH=/Users/caleb/.oh-my-zsh
-
 export ANDROID_SDK_ROOT=/usr/local/share/android-sdk
 export PATH=$ANDROID_SDK_ROOT/platform-tools:$ANDROID_SDK_ROOT/tools/bin:$ANDROID_SDK_ROOT/emulator:$PATH
-
 #====================    THEME    ====================
 ZSH_THEME=amuse
-
 #====================    STUFF    ====================
 ENABLE_CORRECTION="false"
-
 COMPLETION_WAITING_DOTS="true"
-
 # optional formats: "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
 HIST_STAMPS="yyyy-mm-dd"
-
-
 #====================  PLUGINS  ====================
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 plugins=(git brew chucknorris npm osx rand-quote web-search)
-
-
 source $HOME/.bash_profile
 source $ZSH/oh-my-zsh.sh
-
-
 #====================  SSH  ====================
 export SSH_KEY_PATH="~/.ssh/id_rsa"
-
-
-# #====================  ALIASES  ====================
+#====================  ALIASES  ====================
 alias bbd='brew bundle dump -f'
 alias c='clear'
-alias cfg='/usr/bin/git --git-dir=/Users/caleb/.cfg-dotfiles/ --work-tree=/Users/caleb'
-alias cfgloga='cfg log --oneline --decorate --graph --all'
+alias conf='/usr/bin/git --git-dir=/Users/caleb/.cfg-dotfiles/ --work-tree=/Users/caleb'
+alias confstat='conf status'
+alias conflog='conf log'
+alias confloga='conf log --oneline --decorate --graph --all'
 alias fulcrum='cd ~/Projects/fulcrum && open fulcrum.code-workspace && open -a "Google Chrome" http://localhost:3000/ && ./start'
 alias fulcrumapp='cd ~/Projects/fulcrumapp.com && code . && ./start'
 alias gohome='~ && ls -la'
