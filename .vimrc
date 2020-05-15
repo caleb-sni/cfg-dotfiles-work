@@ -31,7 +31,6 @@ Plug 'mbbill/undotree'
 Plug 'sainnhe/gruvbox-material'
 
 call plug#end()
-
 if has('termguicolors')
   set termguicolors
 endif
