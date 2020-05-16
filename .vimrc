@@ -31,6 +31,7 @@ Plug 'git@github.com:kien/ctrlp.vim.git'
 Plug 'git@github.com:Valloric/YouCompleteMe.git'
 Plug 'mbbill/undotree'
 Plug 'sainnhe/gruvbox-material'
+Plug 'vim-airline/vim-airline'
 
 call plug#end()
 if has('termguicolors')
@@ -40,6 +41,8 @@ endif
 set background=dark
 
 let g:gruvbox_material_background = 'hard'
+let g:gruvbox_material_enable_italic = 1
+let g:airline_theme = 'gruvbox_material'
 
 colorscheme gruvbox-material
 
