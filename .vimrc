@@ -1,4 +1,4 @@
-"sdfZZZCaleb Frost Sanderson
+"Caleb Frost Sanderson
 
 syntax on
 
@@ -8,7 +8,7 @@ set tabstop=4 softtabstop=4 expandtab
 set shiftwidth=4
 set smartindent
 set nu
-set nowrap
+"set nowrap
 set smartcase
 set noswapfile
 set nobackup
@@ -46,3 +46,4 @@ let g:airline_theme = 'gruvbox_material'
 
 colorscheme gruvbox-material
 
+map <C-n> :NERDTreeToggle<CR>
