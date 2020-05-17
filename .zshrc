@@ -1,23 +1,30 @@
 #=====================================================
 #============    @cfsanderson .zshrc   ===============
+#============         WORK - SNI       ===============
 #=====================================================
 export ZSH=/Users/caleb/.oh-my-zsh
 export ANDROID_SDK_ROOT=/usr/local/share/android-sdk
 export PATH=$ANDROID_SDK_ROOT/platform-tools:$ANDROID_SDK_ROOT/tools/bin:$ANDROID_SDK_ROOT/emulator:$PATH
+
 #====================    THEME    ====================
 ZSH_THEME=amuse
+
 #====================    STUFF    ====================
 ENABLE_CORRECTION="false"
 COMPLETION_WAITING_DOTS="true"
+
 # optional formats: "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
 HIST_STAMPS="yyyy-mm-dd"
+
 #====================  PLUGINS  ====================
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 plugins=(git brew chucknorris npm osx rand-quote web-search)
 source $HOME/.bash_profile
 source $ZSH/oh-my-zsh.sh
+
 #====================  SSH  ====================
 export SSH_KEY_PATH="~/.ssh/id_rsa"
+
 #====================  ALIASES  ====================
 alias bbd='brew bundle dump -f'
 alias c='clear'
@@ -48,6 +55,7 @@ touch_open() {
 	: > "$1" && open "$1"
 }
 alias tp='trash-put'
+alias vimrc='vim ~/.vimrc'
 alias writer='cd /Users/caleb/Library/Mobile\ Documents/27N4MQEA55~pro~writer/Documents && code .'
 
 . /usr/local/opt/asdf/asdf.sh
