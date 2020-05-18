@@ -44,7 +44,11 @@ colorscheme gruvbox-material
 set background=dark
 
 " open the preview window after entering the markdown buffer
-let g:mkdp_auto_start = 1
+let g:mkdp_auto_start = 0
 let g:airline_theme = 'gruvbox_material'
 
 map <C-n> :NERDTreeToggle<CR>
+
+"remap normal copy/paste keys to vim registers
+vnoremap <C-c> "+y
+noremap <C-v> "+P
