@@ -1,13 +1,35 @@
-#=====================================================
-#============    @cfsanderson .zshrc   ===============
-#============         WORK - SNI       ===============
-#=====================================================
+#===============================================================================
+#====================             @cfsanderson              ====================
+#====================              WORK - SNI               ====================
+#===============================================================================
 export ZSH=/Users/caleb/.oh-my-zsh
 export ANDROID_SDK_ROOT=/usr/local/share/android-sdk
 export PATH=$ANDROID_SDK_ROOT/platform-tools:$ANDROID_SDK_ROOT/tools/bin:$ANDROID_SDK_ROOT/emulator:$PATH
 
-#====================    THEME    ====================
+
+#===============================================================================
+#==========     THEME & COLORS
 ZSH_THEME=amuse
+
+# Enable colors and change prompt:
+autoload -U colors && colors
+PS1="%B%{$fg[red]%}[%{$fg[yellow]%}%n%{$fg[green]%}@%{$fg[blue]%}%M %{$fg[magenta]%}%~%{$fg[red]%}]%{$reset_color%}$%b "
+
+# History in cache directory:
+HISTSIZE=10000
+SAVEHIST=10000
+HISTFILE=~/.cache/zsh/history
+
+# Basic auto/tab complete:
+autoload -U compinit
+zstyle ':completion:*' menu select
+zmodload zsh/complist
+compinit
+_comp_options+=(globdots)		# Include hidden files.
+
+# vi mode
+bindkey -v
+export KEYTIMEOUT=1
 
 #====================    STUFF    ====================
 ENABLE_CORRECTION="false"
@@ -33,6 +55,7 @@ alias confstat='conf status'
 alias conflog='conf log'
 alias confloga='conf log --oneline --decorate --graph --all'
 alias fulcrum='cd ~/Projects/fulcrum && open fulcrum.code-workspace && open -a "Google Chrome" http://localhost:3000/ && ./start'
+alias fulcrumvim='cd ~/Projects/fulcrum && vim . && open -a "Google Chrome" http://localhost:3000/ && ./start'
 alias fulcrumapp='cd ~/Projects/fulcrumapp.com && code . && ./start'
 alias gohome='~ && ls -la'
 alias gs='git switch'
@@ -41,7 +64,7 @@ alias jsfast='bundle exec jekyll serve --watch --limit_posts 1'
 alias jsslow='make clean && bundle exec jekyll serve --watch --config _config_dev.yml --incremental --future'
 alias lsa='ls -a'
 alias lsl='ls -l'
-alias notes='cd ~/Projects/NOTES && code .'
+alias notes='cd ~/Projects/NOTES && vim .'
 alias sasswatch='sass --watch scss:css --style compressed'
 alias showpaths='defaults write com.apple.finder _FXShowPosixPathInTitle -bool true; killall Finder'
 alias sni='cd ~/Projects/spatialnetworks.com && code .'
