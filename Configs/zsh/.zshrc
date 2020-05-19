@@ -6,48 +6,30 @@ export ZSH=/Users/caleb/.oh-my-zsh
 export ANDROID_SDK_ROOT=/usr/local/share/android-sdk
 export PATH=$ANDROID_SDK_ROOT/platform-tools:$ANDROID_SDK_ROOT/tools/bin:$ANDROID_SDK_ROOT/emulator:$PATH
 
-
-#===============================================================================
-#==========     THEME & COLORS
 ZSH_THEME=amuse
 
-# Enable colors and change prompt:
-autoload -U colors && colors
-PS1="%B%{$fg[red]%}[%{$fg[yellow]%}%n%{$fg[green]%}@%{$fg[blue]%}%M %{$fg[magenta]%}%~%{$fg[red]%}]%{$reset_color%}$%b "
-
-# History in cache directory:
+HIST_STAMPS="yyyy-mm-dd"
 HISTSIZE=10000
 SAVEHIST=10000
 HISTFILE=~/.cache/zsh/history
 
-# Basic auto/tab complete:
-autoload -U compinit
-zstyle ':completion:*' menu select
-zmodload zsh/complist
-compinit
-_comp_options+=(globdots)		# Include hidden files.
-
-# vi mode
-bindkey -v
-export KEYTIMEOUT=1
-
-#====================    STUFF    ====================
 ENABLE_CORRECTION="false"
 COMPLETION_WAITING_DOTS="true"
 
-# optional formats: "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
-HIST_STAMPS="yyyy-mm-dd"
+plugins=(
+    git 
+    npm 
+    osx 
+    vi-mode 
+    web-search 
+    zsh-syntax-highlighting
+)
 
-#====================  PLUGINS  ====================
-# Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
-plugins=(git brew chucknorris npm osx rand-quote web-search)
 source $HOME/.bash_profile
 source $ZSH/oh-my-zsh.sh
 
-#====================  SSH  ====================
 export SSH_KEY_PATH="~/.ssh/id_rsa"
 
-#====================  ALIASES  ====================
 alias bbd='brew bundle dump -f'
 alias c='clear'
 alias conf='/usr/bin/git --git-dir=/Users/caleb/.cfg-dotfiles/ --work-tree=/Users/caleb'
@@ -68,6 +50,7 @@ alias notes='cd ~/Projects/NOTES && vim .'
 alias sasswatch='sass --watch scss:css --style compressed'
 alias showpaths='defaults write com.apple.finder _FXShowPosixPathInTitle -bool true; killall Finder'
 alias sni='cd ~/Projects/spatialnetworks.com && code .'
+alias sourcezsh='source ~/Configs/zsh/.zshrc'
 alias st='speedtest'
 alias to=touch_open
 touch_open() {
@@ -80,6 +63,7 @@ touch_open() {
 alias tp='trash-put'
 alias vimrc='vim ~/.vimrc'
 alias writer='cd /Users/caleb/Library/Mobile\ Documents/27N4MQEA55~pro~writer/Documents && code .'
+alias zshrc='vim ~/Configs/zsh/.zshrc'
 
 . /usr/local/opt/asdf/asdf.sh
 . /usr/local/opt/asdf/etc/bash_completion.d/asdf.bash
