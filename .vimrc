@@ -21,7 +21,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'git@github.com:Valloric/YouCompleteMe.git'
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install' }
 Plug 'leafgarland/typescript-vim'
-Plug 'sainnhe/gruvbox-material'
+Plug '~/.vim/unmanaged-plugins/gruvbox-material'
 Plug 'scrooloose/nerdtree'
 Plug 'sheerun/vim-polyglot'
 Plug 'tpope/vim-sensible'
