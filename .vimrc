@@ -1,7 +1,6 @@
 syntax on
 
 set belloff=all
-set colorcolumn=80
 set incsearch
 set nobackup
 set noerrorbells
