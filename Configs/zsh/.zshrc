@@ -8,11 +8,11 @@
 #
 #
 #01100011 01100110 01110011 01100001 01101110 01100100 01100101 01110010 01110011 01101111 01101110 
-#==============================              WORK - SNI              ==============================
+#==============================         .zshrc WORK - SNI            ==============================
 #==================================================================================================
 export ZSH=/Users/caleb/.oh-my-zsh
-export ANDROID_SDK_ROOT=/usr/local/share/android-sdk
-export PATH=$ANDROID_SDK_ROOT/platform-tools:$ANDROID_SDK_ROOT/tools/bin:$ANDROID_SDK_ROOT/emulator:$PATH
+export ANDROID_SDK_HOME=/Users/caleb/Library/Android/sdk
+#export PATH=$ANDROID_SDK_ROOT/platform-tools:$ANDROID_SDK_ROOT/tools/bin:$ANDROID_SDK_ROOT/emulator:$PATH
 
 ZSH_THEME=amuse
 
@@ -38,6 +38,7 @@ source $ZSH/oh-my-zsh.sh
 
 export SSH_KEY_PATH="~/.ssh/id_rsa"
 
+alias runfulcrumandroid='cd ~/Projects/fulcrum-android/ && emulator -avd Pixel_2_API_29 -netdelay none -netspeed full'
 alias bbd='brew bundle dump -f'
 alias c='clear'
 alias conf='/usr/bin/git --git-dir=/Users/caleb/.cfg-dotfiles/ --work-tree=/Users/caleb'
@@ -60,6 +61,7 @@ alias sasswatch='sass --watch scss:css --style compressed'
 alias showpaths='defaults write com.apple.finder _FXShowPosixPathInTitle -bool true; killall Finder'
 alias sni='cd ~/Projects/spatialnetworks.com && code .'
 alias sourcezsh='source ~/Configs/zsh/.zshrc'
+alias sourcevim='source ~/.vimrc'
 alias st='speedtest'
 alias to=touch_open
 touch_open() {
