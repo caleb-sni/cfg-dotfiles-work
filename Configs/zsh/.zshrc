@@ -11,8 +11,8 @@
 #==============================         .zshrc WORK - SNI            ==============================
 #==================================================================================================
 export ZSH=/Users/caleb/.oh-my-zsh
-export ANDROID_SDK_HOME=/Users/caleb/Library/Android/sdk
-#export PATH=$ANDROID_SDK_ROOT/platform-tools:$ANDROID_SDK_ROOT/tools/bin:$ANDROID_SDK_ROOT/emulator:$PATH
+export ANDROID_HOME=/Users/caleb/Library/Android/sdk
+export PATH=$ANDROID_HOME/platform-tools:$ANDROID_HOME/tools/bin:$ANDROID_HOME/emulator:$PATH
 
 ZSH_THEME=amuse
 
@@ -38,16 +38,16 @@ source $ZSH/oh-my-zsh.sh
 
 export SSH_KEY_PATH="~/.ssh/id_rsa"
 
-alias runfulcrumandroid='cd ~/Projects/fulcrum-android/ && emulator -avd Pixel_2_API_29 -netdelay none -netspeed full'
 alias bbd='brew bundle dump -f'
 alias c='clear'
 alias conf='/usr/bin/git --git-dir=/Users/caleb/.cfg-dotfiles/ --work-tree=/Users/caleb'
 alias confstat='conf status'
 alias conflog='conf log'
 alias confloga='conf log --oneline --decorate --graph --all'
-alias fulcrum='cd ~/Projects/fulcrum && open fulcrum.code-workspace && open -a "Google Chrome" http://localhost:3000/ && ./start'
-alias fulcrumvim='cd ~/Projects/fulcrum && vim . && open -a "Google Chrome" http://localhost:3000/ && ./start'
-alias fulcrumapp='cd ~/Projects/fulcrumapp.com && code . && ./start'
+alias fulcode='cd ~/Projects/fulcrum && open fulcrum.code-workspace && open -a "Google Chrome" http://localhost:3000/ && ./start'
+alias fulvim='cd ~/Projects/fulcrum && open -a "Google Chrome" http://localhost:3000/ && /start && vim'
+alias fulsite='cd ~/Projects/fulcrumapp.com && code . && ./start'
+alias fuldroid='cd ~/Projects/fulcrum-android/ && emulator -avd Pixel_2_API_29 -netdelay none -netspeed full'
 alias gohome='~ && ls -la'
 alias gs='git switch'
 alias hidepaths='defaults write com.apple.finder _FXShowPosixPathInTitle -bool false; killall Finder'
