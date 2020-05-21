@@ -26,6 +26,7 @@ Plug 'scrooloose/nerdtree'
 Plug 'sheerun/vim-polyglot'
 Plug 'tpope/vim-sensible'
 Plug 'vim-airline/vim-airline'
+Plug 'junegunn/goyo.vim'
 
 call plug#end()
 
