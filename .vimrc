@@ -6,6 +6,7 @@ set nobackup
 set noerrorbells
 set noswapfile
 set nu
+set number relativenumber
 set scrolloff=5
 set shiftwidth=4
 set smartindent
@@ -44,6 +45,7 @@ set background=dark
 
 " open the preview window after entering the markdown buffer
 let g:mkdp_auto_start = 0
+let g:mkdp_browser = 'Google \Chrome'
 let g:airline_theme = 'gruvbox_material'
 
 map <C-n> :NERDTreeToggle<CR>
