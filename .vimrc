@@ -20,7 +20,6 @@ set noerrorbells
 set noswapfile
 set nu
 set number relativenumber
-set scrolloff=5
 set shiftwidth=4
 set smartindent
 set smartcase
