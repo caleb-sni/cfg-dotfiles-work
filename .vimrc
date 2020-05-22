@@ -26,11 +26,18 @@ set smartcase
 set tabstop=4 softtabstop=4 expandtab
 set undodir=~/.vim/undodir
 set undofile
+set colorcolumn=80
+
 highlight Comment cterm=italic
 
+"NERDTREE
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | exe 'cd '.argv()[0] | endif
+
+let NERDTreeQuitOnOpen = 1
+let NERDTreeMinimaUI = 1
+let NERDTreeDirArrows = 1
 
 call plug#begin('~/.vim/plugged')
 
@@ -38,7 +45,7 @@ Plug 'git@github.com:Valloric/YouCompleteMe.git'
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install' }
 Plug 'leafgarland/typescript-vim'
 Plug '~/.vim/unmanaged-plugins/gruvbox-material'
-Plug 'scrooloose/nerdtree'
+Plug 'preservim/nerdtree'
 Plug 'sheerun/vim-polyglot'
 Plug 'tpope/vim-sensible'
 Plug 'vim-airline/vim-airline'
