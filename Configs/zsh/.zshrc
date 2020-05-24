@@ -1,15 +1,11 @@
-#01100011 01100110 01110011 01100001 01101110 01100100 01100101 01110010 01110011 01101111 01101110 
-#                           __                     _                           
-#                          / _|                   | |                          
-#                      ___| |_ ___  __ _ _ __   __| | ___ _ __ ___  ___  _ __  
-#                     / __|  _/ __|/ _` | '_ \ / _` |/ _ \ '__/ __|/ _ \| '_ \ 
-#                    | (__| | \__ \ (_| | | | | (_| |  __/ |  \__ \ (_) | | | |
-#                     \___|_| |___/\__,_|_| |_|\__,_|\___|_|  |___/\___/|_| |_|
-#
-#
-#01100011 01100110 01110011 01100001 01101110 01100100 01100101 01110010 01110011 01101111 01101110 
-#==============================         .zshrc WORK - SNI            ==============================
-#==================================================================================================
+#===============================================================================
+#                / _|                   | |
+#            ___| |_ ___  __ _ _ __   __| | ___ _ __ ___  ___  _ __
+#           / __|  _/ __|/ _` | '_ \ / _` |/ _ \ '__/ __|/ _ \| '_ \
+#          | (__| | \__ \ (_| | | | | (_| |  __/ |  \__ \ (_) | | | |
+#           \___|_| |___/\__,_|_| |_|\__,_|\___|_|  |___/\___/|_| |_|
+#===============================================================================
+
 export ZSH=/Users/caleb/.oh-my-zsh
 export ANDROID_HOME=/Users/caleb/Library/Android/sdk
 export PATH=$ANDROID_HOME/platform-tools:$ANDROID_HOME/tools/bin:$ANDROID_HOME/emulator:$PATH
@@ -48,6 +44,8 @@ alias fulcode='cd ~/Projects/fulcrum && open fulcrum.code-workspace && open -a "
 alias fulrun='cd ~/Projects/fulcrum && open -a "Google Chrome" http://localhost:3000/ && ./start'
 alias fulsite='cd ~/Projects/fulcrumapp.com && ./start'
 alias fuldroid='cd ~/Projects/fulcrum-android/ && emulator -avd Pixel_2_API_29 -netdelay none -netspeed full'
+alias curlcfsvimrc='curl -Lks https://raw.githubusercontent.com/cfsanderson/cfg-dotfiles/master/.vimrc > .cfs_vimrc'
+alias curlsnivimrc='curl -Lks https://raw.githubusercontent.com/cfsanderson/cfg-dotfiles-work/master/.vimrc > .sni_vimrc'
 alias gohome='~ && ls -la'
 alias gs='git switch'
 alias hidepaths='defaults write com.apple.finder _FXShowPosixPathInTitle -bool false; killall Finder'

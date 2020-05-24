@@ -1,18 +1,16 @@
-"                           __                     _                           
-"                          / _|                   | |                          
-"                      ___| |_ ___  __ _ _ __   __| | ___ _ __ ___  ___  _ __  
-"                     / __|  _/ __|/ _` | '_ \ / _` |/ _ \ '__/ __|/ _ \| '_ \ 
-"                    | (__| | \__ \ (_| | | | | (_| |  __/ |  \__ \ (_) | | | |
-"                     \___|_| |___/\__,_|_| |_|\__,_|\___|_|  |___/\___/|_| |_|
-"
-"
-"==============================         .vimrc WORK - SNI            ==============================
-"==================================================================================================
+"===============================================================================
+"                / _|                   | |
+"            ___| |_ ___  __ _ _ __   __| | ___ _ __ ___  ___  _ __
+"           / __|  _/ __|/ _` | '_ \ / _` |/ _ \ '__/ __|/ _ \| '_ \
+"          | (__| | \__ \ (_| | | | | (_| |  __/ |  \__ \ (_) | | | |
+"           \___|_| |___/\__,_|_| |_|\__,_|\___|_|  |___/\___/|_| |_|
+"===============================================================================
 
 syntax on
 
 set belloff=all
 set incsearch
+set list
 set nobackup
 set noerrorbells
 set noswapfile
@@ -27,14 +25,12 @@ set undofile
 
 highlight Comment cterm=italic
 
-"NERDTREE
+" NERDTREE
 autocmd StdinReadPre * let s:std_in=1
+" Open NERDTree by default when vim starts up if no files specified
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
-autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | exe 'cd '.argv()[0] | endif
-
-let NERDTreeQuitOnOpen = 1
-let NERDTreeMinimaUI = 1
-let NERDTreeDirArrows = 1
+" Automatically close a tab if NerdTree is the last thing running
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
 call plug#begin('~/.vim/plugged')
 
@@ -66,17 +62,30 @@ let g:gruvbox_material_sign_column_background = 'none'
 colorscheme gruvbox-material
 set background=dark
 
-" Markdown Preview 
+" Markdown Preview
 let g:mkdp_auto_start = 0
 let g:mkdp_refresh_slow = 1
 let g:mkdp_browser = 'firefox'
 
-" Airline
 let g:airline_theme = 'gruvbox_material'
 
-" Mappings
-map <C-n> :NERDTreeToggle<CR>
+" REMAPS
+let mapleader = "\<Space>"
+
+" save file (:w)
+noremap <leader>w :w<cr>
+
+" toggle NERDTree
+map <leader>n :NERDTreeToggle<cr>
+
+" using * to search or visual selection this enters the replace command and
+" puts your cursor in line to accept the term to replace
+nnoremap <leader>r :%s///g<left><left>
+nnoremap <leader>rc :%s///gc<left><left>
+
+" source current file
+nnoremap <leader>so :source %<cr>
 
 "remap normal copy/paste keys to vim registers
-vnoremap <C-c> "+y
-noremap <C-v> "+P
+vnoremap <leader>c "+y
+noremap <leader>p "+P
