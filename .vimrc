@@ -1,4 +1,3 @@
-"01100011 01100110 01110011 01100001 01101110 01100100 01100101 01110010 01110011 01101111 01101110 
 "                           __                     _                           
 "                          / _|                   | |                          
 "                      ___| |_ ___  __ _ _ __   __| | ___ _ __ ___  ___  _ __  
@@ -7,7 +6,6 @@
 "                     \___|_| |___/\__,_|_| |_|\__,_|\___|_|  |___/\___/|_| |_|
 "
 "
-"01100011 01100110 01110011 01100001 01101110 01100100 01100101 01110010 01110011 01101111 01101110 
 "==============================         .vimrc WORK - SNI            ==============================
 "==================================================================================================
 
@@ -26,7 +24,6 @@ set smartcase
 set tabstop=4 softtabstop=4 expandtab
 set undodir=~/.vim/undodir
 set undofile
-set colorcolumn=80
 
 highlight Comment cterm=italic
 
@@ -57,6 +54,8 @@ syntax enable
 if has('termguicolors')
   set termguicolors
 endif
+
+" Gruvbox Material theme
 let g:gruvbox_material_background = 'hard'
 let g:gruvbox_material_enable_italic = 1
 let g:gruvbox_material_disable_italic_comment = 0
@@ -67,11 +66,15 @@ let g:gruvbox_material_sign_column_background = 'none'
 colorscheme gruvbox-material
 set background=dark
 
-" open the preview window after entering the markdown buffer
+" Markdown Preview 
 let g:mkdp_auto_start = 0
+let g:mkdp_refresh_slow = 1
 let g:mkdp_browser = 'firefox'
+
+" Airline
 let g:airline_theme = 'gruvbox_material'
 
+" Mappings
 map <C-n> :NERDTreeToggle<CR>
 
 "remap normal copy/paste keys to vim registers
