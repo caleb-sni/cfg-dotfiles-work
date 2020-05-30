@@ -44,7 +44,6 @@ alias fulcode='cd ~/Projects/fulcrum && open fulcrum.code-workspace && open -a "
 alias fuldroid='cd ~/Projects/fulcrum-android/ && emulator -avd Pixel_2_API_29 -netdelay none -netspeed full'
 alias fulrun='cd ~/Projects/fulcrum && open -a "Google Chrome" http://localhost:3000/ && ./start'
 alias fulsite='cd ~/Projects/fulcrumapp.com && ./start'
-alias fulvim='cd ~/Projects/fulcrum && vim .'
 alias curlcfsvimrc='curl -Lks https://raw.githubusercontent.com/cfsanderson/cfg-dotfiles/master/.vimrc > .cfs_vimrc'
 alias curlsnivimrc='curl -Lks https://raw.githubusercontent.com/cfsanderson/cfg-dotfiles-work/master/.vimrc > .sni_vimrc'
 alias gohome='~ && ls -la'
