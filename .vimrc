@@ -11,7 +11,6 @@ syntax on
 set belloff=all
 set display+=lastline
 set incsearch
-set laststatus=2
 set nobackup
 set noerrorbells
 set noswapfile
@@ -21,13 +20,11 @@ set scrolloff=5
 set sidescrolloff=5
 set shiftwidth=2
 set smartindent
-set smarttab
 set smartcase
 set splitbelow
 set splitright
-set tabstop=4 softtabstop=4 expandtab
+set tabstop=2 softtabstop=2 expandtab
 set undodir=~/.vim/undodir
-set wildmenu
 
 highlight Comment cterm=italic
 
@@ -48,6 +45,7 @@ Plug 'leafgarland/typescript-vim'
 Plug '~/.vim/unmanaged-plugins/gruvbox-material'
 Plug 'preservim/nerdtree'
 Plug 'sheerun/vim-polyglot'
+Plug 'tpope/vim-sensible'
 Plug 'vim-airline/vim-airline'
 Plug '~/.vim/unmanaged-plugins/vim-javascript'
 
@@ -72,7 +70,7 @@ set background=dark
 " Markdown Preview
 let g:mkdp_auto_start = 0
 let g:mkdp_refresh_slow = 1
-let g:mkdp_browser = 'Google Chrome'
+let g:mkdp_browser = 'firefox'
 
 let g:airline_theme = 'gruvbox_material'
 
