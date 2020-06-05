@@ -46,6 +46,7 @@ Plug '~/.vim/unmanaged-plugins/gruvbox-material'
 Plug 'preservim/nerdtree'
 Plug 'sheerun/vim-polyglot'
 Plug 'tpope/vim-sensible'
+Plug 'tpope/vim-fugitive'
 Plug 'vim-airline/vim-airline'
 Plug '~/.vim/unmanaged-plugins/vim-javascript'
 
@@ -98,6 +99,11 @@ nnoremap <leader>so :source %<cr>
 " remap normal copy/paste keys to vim registers
 vnoremap <C-c> "+y
 noremap <C-p> "+p
+
+" vim-fugitive - git workflow
+nmap <leader>gs :G<CR>
+nmap <leader>gj :diffget //3<CR>
+nmap <leader>gf :diffget //2<CR>
 
 " remap change split to just ctrl + {h,j,k,l}
 map <C-H> <C-W><C-H>
