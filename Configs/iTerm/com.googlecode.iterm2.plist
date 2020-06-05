@@ -594,28 +594,28 @@
 			<key>Text</key>
 			<string></string>
 		</dict>
-		<key>0x68-0x40000</key>
+		<key>0x48-0x60000</key>
 		<dict>
 			<key>Action</key>
 			<integer>18</integer>
 			<key>Text</key>
 			<string></string>
 		</dict>
-		<key>0x6a-0x40000</key>
-		<dict>
-			<key>Action</key>
-			<integer>20</integer>
-			<key>Text</key>
-			<string></string>
-		</dict>
-		<key>0x6b-0x40000</key>
+		<key>0x4a-0x60000</key>
 		<dict>
 			<key>Action</key>
 			<integer>21</integer>
 			<key>Text</key>
 			<string></string>
 		</dict>
-		<key>0x6c-0x40000</key>
+		<key>0x4b-0x60000</key>
+		<dict>
+			<key>Action</key>
+			<integer>20</integer>
+			<key>Text</key>
+			<string></string>
+		</dict>
+		<key>0x4c-0x60000</key>
 		<dict>
 			<key>Action</key>
 			<integer>19</integer>
@@ -772,7 +772,7 @@
 	<key>NSWindow Frame NSNavPanelAutosaveName</key>
 	<string>496 504 799 448 0 0 1792 1120 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>3 201 1657 891 0 0 1792 1120 </string>
+	<string>0 0 1792 1097 0 0 1792 1097 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>0 0 1792 1120 0 0 1792 1120 </string>
 	<key>New Bookmarks</key>
@@ -4664,7 +4664,7 @@
 	<key>NoSyncInstallationId</key>
 	<string>A5EC88CC-1AC8-4ED2-851B-2167A639E71E</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>118</integer>
+	<integer>127</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -5429,7 +5429,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2020-06-01T11:09:59Z</date>
+	<date>2020-06-04T11:54:16Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SeparateStatusBarsPerPane</key>
