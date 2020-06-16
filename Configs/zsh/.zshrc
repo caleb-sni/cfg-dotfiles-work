@@ -56,6 +56,7 @@ alias jsslow='make clean && bundle exec jekyll serve --watch --config _config_de
 alias lsa='ls -a'
 alias lsl='ls -l'
 alias myhub='open https://github.com/cfsanderson'
+alias preview='open -a Preview'
 alias notes='cd ~/Projects/.notes && vim .'
 alias sasswatch='sass --watch scss:css --style compressed'
 alias showpaths='defaults write com.apple.finder _FXShowPosixPathInTitle -bool true; killall Finder'
