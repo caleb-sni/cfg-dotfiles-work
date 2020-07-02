@@ -70,12 +70,3 @@ cask "postgres"
 cask "slack"
 cask "visual-studio-code"
 cask "wkhtmltopdf"
-mas "Airmail", id: 918858936
-mas "Be Focused", id: 973134470
-mas "Fantastical", id: 975937182
-mas "GarageBand", id: 682658836
-mas "iA Writer", id: 775737590
-mas "iMovie", id: 408981434
-mas "Smart Countdown Timer", id: 1410709951
-mas "Trello", id: 1278508951
-mas "Xcode", id: 497799835
