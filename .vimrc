@@ -37,18 +37,20 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 
 call plug#begin('~/.vim/plugged')
 
-Plug 'Valloric/YouCompleteMe'
-Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install' }
-Plug 'junegunn/goyo.vim'
+Plug 'vim-airline/vim-airline'
+Plug 'tpope/vim-commentary'
+Plug 'mattn/emmet-vim'
+Plug 'tpope/vim-fugitive'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-Plug 'leafgarland/typescript-vim'
+Plug 'junegunn/goyo.vim'
 Plug '~/.vim/unmanaged-plugins/gruvbox-material'
+Plug '~/.vim/unmanaged-plugins/vim-javascript'
+Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install' }
 Plug 'preservim/nerdtree'
 Plug 'sheerun/vim-polyglot'
 Plug 'tpope/vim-sensible'
-Plug 'tpope/vim-fugitive'
-Plug 'vim-airline/vim-airline'
-Plug '~/.vim/unmanaged-plugins/vim-javascript'
+Plug 'leafgarland/typescript-vim'
+Plug 'Valloric/YouCompleteMe'
 
 call plug#end()
 
@@ -100,6 +102,11 @@ autocmd! User GoyoLeave nested call <SID>goyo_leave()
 
 " REMAPS
 let mapleader = "\<Space>"
+
+" make return and shift+return open  up new lines above and below respectively
+" without going into insert mode.
+nmap <C-o> O<Esc>
+nmap <CR> o<Esc>
 
 " save & quit
 noremap <leader>w :w<cr>
