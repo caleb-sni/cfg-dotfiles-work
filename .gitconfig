@@ -1,8 +1,8 @@
 # This is Git's per-user configuration file.
 [user]
 # Please adapt and uncomment the following lines:
-	name = cfsanderson
-	email = calebsanderson@icloud.com
+	name = caleb-sni
+	email = caleb.sanderson@spatialnetworks.com
 	
 [core]
 	editor = vim
