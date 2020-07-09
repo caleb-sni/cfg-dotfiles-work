@@ -18,6 +18,7 @@ brew "unixodbc"
 brew "asdf"
 brew "gettext"
 brew "sqlite"
+brew "python@3.8"
 brew "cmake"
 brew "curl"
 brew "exercism"
@@ -39,7 +40,6 @@ brew "ninja"
 brew "nmap"
 brew "pkg-config"
 brew "postgis"
-brew "python"
 brew "redis"
 brew "ruby-build"
 brew "speedtest-cli"
@@ -69,13 +69,12 @@ cask "postgres"
 cask "slack"
 cask "visual-studio-code"
 cask "wkhtmltopdf"
-mas "Airmail", id: 918858936
 mas "Be Focused", id: 973134470
-mas "Fantastical", id: 975937182
 mas "GarageBand", id: 682658836
 mas "iA Writer", id: 775737590
 mas "iMovie", id: 408981434
 mas "Pages", id: 409201541
 mas "Smart Countdown Timer", id: 1410709951
+mas "Theine", id: 955848755
 mas "Trello", id: 1278508951
 mas "Xcode", id: 497799835
