@@ -42,7 +42,6 @@ alias conf='/usr/bin/git --git-dir=/Users/caleb/.cfg-dotfiles/ --work-tree=/User
 alias confstat='conf status'
 alias conflog='conf log'
 alias confloga='conf log --oneline --decorate --graph --all'
-alias dates='date && TZ=America/Chicago date && TZ=America/Denver date && TZ=America/Los_Angeles date'
 alias fulcode='cd ~/Projects/fulcrum && open fulcrum.code-workspace && open -a "Brave Browser" http://localhost:3000/ && ./start'
 alias fuldroid='cd ~/Projects/fulcrum-android/ && emulator -avd Pixel_2_API_29 -netdelay none -netspeed full'
 alias fulrun='cd ~/Projects/fulcrum && open -a "Brave Browser" http://localhost:3000/ && ./start'
@@ -65,6 +64,7 @@ alias sni='cd ~/Projects/spatialnetworks.com && code .'
 alias sourcezsh='source ~/Configs/zsh/.zshrc'
 alias sourcevim='source ~/.vimrc'
 alias st='speedtest'
+alias timez='date "+EST: %H:%M" && TZ=America/Chicago date "+CST: %H:%M" && TZ=America/Denver date "+MST: %H:%M" && TZ=America/Los_Angeles date "+PST: %H:%M"'
 alias to=touch_open
 touch_open() {
 	if ! [ "$1" ]; then
