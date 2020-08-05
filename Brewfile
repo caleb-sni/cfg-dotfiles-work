@@ -77,7 +77,6 @@ cask "wkhtmltopdf"
 mas "Be Focused", id: 973134470
 mas "Flow", id: 1423210932
 mas "GarageBand", id: 682658836
-mas "iA Writer", id: 775737590
 mas "iMovie", id: 408981434
 mas "Smart Countdown Timer", id: 1410709951
 mas "Theine", id: 955848755
