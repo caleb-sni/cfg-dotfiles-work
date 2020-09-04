@@ -29,19 +29,22 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 
 call plug#begin('~/.vim/plugged')
 
-Plug 'vim-airline/vim-airline'
-Plug 'tpope/vim-commentary'
-Plug 'mattn/emmet-vim'
-Plug 'tpope/vim-fugitive'
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-Plug 'junegunn/goyo.vim'
-Plug '~/.vim/unmanaged-plugins/gruvbox-material'
-Plug '~/.vim/unmanaged-plugins/vim-javascript'
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install' }
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
+Plug 'junegunn/goyo.vim'
+Plug 'leafgarland/typescript-vim'
+Plug 'mattn/emmet-vim'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'preservim/nerdtree'
 Plug 'sheerun/vim-polyglot'
+Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-sensible'
-Plug 'leafgarland/typescript-vim'
+Plug 'theprimeagen/vim-be-good', {'do': './install.sh'}
+Plug '~/.vim/unmanaged-plugins/gruvbox-material'
+Plug '~/.vim/unmanaged-plugins/vim-javascript'
+Plug 'vim-airline/vim-airline'
 
 call plug#end()
 
