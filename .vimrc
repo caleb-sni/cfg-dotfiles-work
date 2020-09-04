@@ -53,24 +53,6 @@ if has('termguicolors')
   set termguicolors
 endif
 
-" Gruvbox Material theme
-let g:gruvbox_material_background = 'hard'
-let g:gruvbox_material_enable_italic = 1
-let g:gruvbox_material_disable_italic_comment = 0
-let g:gruvbox_material_menu_selection_background = 'green'
-let g:gruvbox_material_palette = 'material'
-let g:gruvbox_material_sign_column_background = 'none'
-
-colorscheme gruvbox-material
-set background=dark
-
-" Markdown Preview
-let g:mkdp_auto_start = 0
-let g:mkdp_refresh_slow = 0
-let g:mkdp_browser = 'Brave Browser'
-
-let g:airline_theme = 'gruvbox_material'
-
 " Goyo settings
 let g:goyo_width = 120
 function! s:goyo_enter()
@@ -93,6 +75,29 @@ endfunction
 
 autocmd! User GoyoEnter nested call <SID>goyo_enter()
 autocmd! User GoyoLeave nested call <SID>goyo_leave()
+
+" Gruvbox Material theme
+let g:gruvbox_material_background = 'hard'
+let g:gruvbox_material_enable_italic = 1
+let g:gruvbox_material_disable_italic_comment = 0
+let g:gruvbox_material_menu_selection_background = 'green'
+let g:gruvbox_material_palette = 'material'
+let g:gruvbox_material_sign_column_background = 'none'
+
+colorscheme gruvbox-material
+set background=dark
+
+"FZF settings
+let g:fzf_layout = { 'window': { 'width': 0.8, 'height': 0.8 } }
+let $FZF_DEFAULT_OPTS='--reverse'
+
+"" Markdown Preview
+let g:mkdp_auto_start = 0
+let g:mkdp_refresh_slow = 0
+let g:mkdp_browser = 'Brave Browser'
+
+let g:airline_theme = 'gruvbox_material'
+
 
 " REMAPS
 let mapleader = "\<Space>"
