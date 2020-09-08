@@ -107,6 +107,10 @@ let mapleader = "\<Space>"
 nmap <C-o> O<Esc>
 nmap <CR> o<Esc>
 
+" Coc-rename
+nmap <leader>rr <Plug>(coc-rename)
+nnoremap <leader>prw :CocSearch <C-R>=expand("<cword>")<CR><CR>
+
 " save & quit
 noremap <leader>w :w<cr>
 noremap <leader>q :q<cr>
@@ -132,6 +136,7 @@ noremap <C-p> "+p
 " vim-fugitive - git workflow
 nmap <leader>gs :G<CR>
 nmap <leader>gj :diffget //3<CR>
+
 nmap <leader>gf :diffget //2<CR>
 
 " remap change split to just ctrl + {h,j,k,l}
