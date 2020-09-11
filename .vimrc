@@ -111,10 +111,6 @@ nmap <CR> o<Esc>
 nmap <leader>rr <Plug>(coc-rename)
 nnoremap <leader>prw :CocSearch <C-R>=expand("<cword>")<CR><CR>
 
-" save & quit
-noremap <leader>w :w<cr>
-noremap <leader>q :q<cr>
-
 " toggle NERDTree
 map <leader>n :NERDTreeToggle<cr>
 
