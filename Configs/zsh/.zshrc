@@ -66,6 +66,7 @@ touch_open() {
 }
 alias tp='trash-put'
 alias vimrc='nvim ~/.config/nvim/init.vim'
+alias vim='nvim'
 alias writer='cd /Users/caleb/Library/Mobile\ Documents/27N4MQEA55~pro~writer/Documents && code .'
 alias zshrc='nvim ~/Configs/zsh/.zshrc'
 
