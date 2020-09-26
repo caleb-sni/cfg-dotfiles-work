@@ -42,28 +42,18 @@ alias conf='/usr/bin/git --git-dir=/Users/caleb/.cfg-dotfiles/ --work-tree=/User
 alias confstat='conf status'
 alias conflog='conf log'
 alias confloga='conf log --oneline --decorate --graph --all'
-alias fulcode='cd ~/Projects/fulcrum && open fulcrum.code-workspace && open -a "Brave Browser" http://localhost:3000/ && ./start'
-alias fuldroid='cd ~/Projects/fulcrum-android/ && emulator -avd Pixel_2_API_29 -netdelay none -netspeed full'
-alias fulios='cd ~/Projects/fulcrum-ios/ && open Fulcrum.xcworkspace'
-alias fulrun='cd ~/Projects/fulcrum && open -a "Brave Browser" http://localhost:3000/ && ./start'
-alias fulsite='cd ~/Projects/fulcrumapp.com && ./start'
-alias curlcfsvimrc='curl -Lks https://raw.githubusercontent.com/cfsanderson/cfg-dotfiles/master/.vimrc > .cfs_vimrc'
-alias curlsnivimrc='curl -Lks https://raw.githubusercontent.com/cfsanderson/cfg-dotfiles-work/master/.vimrc > .sni_vimrc'
 alias gohome='~ && ls -la'
 alias gs='git switch'
 alias hidepaths='defaults write com.apple.finder _FXShowPosixPathInTitle -bool false; killall Finder'
-alias jsfast='bundle exec jekyll serve --watch --limit_posts 1'
-alias jsslow='make clean && bundle exec jekyll serve --watch --config _config_dev.yml --incremental --future'
 alias lsa='ls -a'
 alias lsl='ls -l'
 alias myhub='open https://github.com/caleb-sni'
 alias preview='open -a Preview'
-alias notes='cd ~/Projects/.notes && vim .'
+alias notes='cd ~/Projects/.notes && nvim .'
 alias sasswatch='sass --watch scss:css --style compressed'
 alias showpaths='defaults write com.apple.finder _FXShowPosixPathInTitle -bool true; killall Finder'
-alias sni='cd ~/Projects/spatialnetworks.com && code .'
 alias sourcezsh='source ~/Configs/zsh/.zshrc'
-alias sourcevim='source ~/.vimrc'
+alias sourcevim='source ~/.config/nvim/init.vim'
 alias st='speedtest'
 alias timez='date "+EST: %H:%M" && TZ=America/Chicago date "+CST: %H:%M" && TZ=America/Denver date "+MST: %H:%M" && TZ=America/Los_Angeles date "+PST: %H:%M"'
 alias to=touch_open
@@ -75,9 +65,9 @@ touch_open() {
 	: > "$1" && open "$1"
 }
 alias tp='trash-put'
-alias vimrc='vim ~/.vimrc'
+alias vimrc='nvim ~/.config/nvim/init.vim'
 alias writer='cd /Users/caleb/Library/Mobile\ Documents/27N4MQEA55~pro~writer/Documents && code .'
-alias zshrc='vim ~/Configs/zsh/.zshrc'
+alias zshrc='nvim ~/Configs/zsh/.zshrc'
 
 . /usr/local/opt/asdf/asdf.sh
 . /usr/local/opt/asdf/etc/bash_completion.d/asdf.bash
