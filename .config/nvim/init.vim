@@ -45,6 +45,8 @@ Plug 'theprimeagen/vim-be-good', {'do': './install.sh'}
 Plug '~/.vim/unmanaged-plugins/gruvbox-material'
 Plug '~/.vim/unmanaged-plugins/vim-javascript'
 Plug 'vim-airline/vim-airline'
+Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
+Plug 'ryanoasis/vim-devicons'
 
 call plug#end()
 

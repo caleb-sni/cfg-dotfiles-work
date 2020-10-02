@@ -3,6 +3,7 @@ tap "dart-lang/dart"
 tap "heroku/brew"
 tap "homebrew/bundle"
 tap "homebrew/cask"
+tap "homebrew/cask-fonts"
 tap "homebrew/cask-versions"
 tap "homebrew/core"
 tap "homebrew/services"
@@ -19,10 +20,12 @@ brew "unixodbc"
 brew "asdf"
 brew "gettext"
 brew "sqlite"
+brew "glib"
 brew "cmake"
 brew "curl"
 brew "exercism"
 brew "fastlane"
+brew "pkg-config"
 brew "ffmpeg"
 brew "forego"
 brew "fortune"
@@ -39,11 +42,10 @@ brew "postgresql"
 brew "mapnik"
 brew "mas"
 brew "mysql"
-brew "neovim"
+brew "neovim", args: ["HEAD"]
 brew "ninja"
 brew "nmap"
 brew "node"
-brew "pkg-config"
 brew "sfcgal"
 brew "postgis"
 brew "redis"
@@ -69,6 +71,7 @@ brew "sass/sass/sass"
 cask "1password"
 cask "android-sdk"
 cask "firefox"
+cask "font-fira-code-nerd-font"
 cask "google-chrome"
 cask "iterm2"
 cask "postgres"
@@ -78,9 +81,8 @@ cask "wkhtmltopdf"
 mas "Be Focused", id: 973134470
 mas "Fantastical", id: 975937182
 mas "Flow", id: 1423210932
-mas "Pages", id: 409201541
+mas "Keynote", id: 409183694
 mas "Smart Countdown Timer", id: 1410709951
 mas "Spark", id: 1176895641
-mas "Theine", id: 955848755
 mas "Trello", id: 1278508951
 mas "Xcode", id: 497799835
