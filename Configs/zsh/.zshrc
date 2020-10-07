@@ -35,8 +35,6 @@ source $ZSH/oh-my-zsh.sh
 export SSH_KEY_PATH="~/.ssh/id_rsa"
 
 alias bbd='brew bundle dump -f'
-alias browse4000='open -a "Brave Browser" http://localhost:4000/'
-alias browse3000='open -a "Brave Browser" http://localhost:3000/'
 alias c='clear'
 alias conf='/usr/bin/git --git-dir=/Users/caleb/.cfg-dotfiles/ --work-tree=/Users/caleb'
 alias confstat='conf status'
@@ -45,6 +43,7 @@ alias confloga='conf log --oneline --decorate --graph --all'
 alias home='~ && ls -la'
 alias gs='git switch'
 alias hidepaths='defaults write com.apple.finder _FXShowPosixPathInTitle -bool false; killall Finder'
+alias localhost='open -a "Brave Browser" http://localhost:3000/'
 alias lsa='ls -a'
 alias lsl='ls -l'
 alias myhub='open https://github.com/caleb-sni'

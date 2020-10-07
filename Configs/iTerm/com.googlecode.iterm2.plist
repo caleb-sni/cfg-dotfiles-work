@@ -787,7 +787,7 @@
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>970 768 620 392 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>3 0 1785 1097 0 0 1792 1120 </string>
+	<string>2560 0 2560 1417 2560 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>2892 0 1785 1146 2560 0 2560 1417 </string>
 	<key>New Bookmarks</key>
@@ -1026,16 +1026,14 @@
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.12941176470588237</real>
+				<real>0.08331298828125</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.12156862745098039</real>
+				<real>0.076886157039552927</real>
 				<key>Red Component</key>
-				<real>0.11372549019607843</real>
+				<real>0.070459325797855854</real>
 			</dict>
-			<key>Background Image Location</key>
-			<string>/Users/caleb/Desktop/fulcrum-background-01-16.9.png</string>
 			<key>Background Image Mode</key>
 			<integer>2</integer>
 			<key>Badge Color</key>
@@ -5192,14 +5190,14 @@
 	<key>NoSyncFrame_SharedPreferences</key>
 	<dict>
 		<key>screenFrame</key>
-		<string>{{0, 0}, {1792, 1120}}</string>
+		<string>{{2560, 0}, {2560, 1440}}</string>
 		<key>topLeft</key>
-		<string>{269, 647}</string>
+		<string>{2829, 595}</string>
 	</dict>
 	<key>NoSyncInstallationId</key>
 	<string>A5EC88CC-1AC8-4ED2-851B-2167A639E71E</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>224</integer>
+	<integer>225</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -5986,7 +5984,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2020-09-28T13:06:20Z</date>
+	<date>2020-10-02T13:12:35Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SUUpdateGroupIdentifier</key>
@@ -6002,7 +6000,7 @@
 	<key>SplitPaneDimmingAmount</key>
 	<real>0.23816766400709224</real>
 	<key>StretchTabsToFillBar</key>
-	<true/>
+	<false/>
 	<key>TabStyleWithAutomaticOption</key>
 	<integer>5</integer>
 	<key>TabViewType</key>
