@@ -1,5 +1,7 @@
+" ============================================================================
 " switched to nvim and aliased vim to nvim - this file is no longer loaded and
 " and nvim config lives in .config/nvim/init.vim
+" ============================================================================
 syntax on
 
 set belloff=all
