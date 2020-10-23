@@ -34,6 +34,7 @@ source $ZSH/oh-my-zsh.sh
 
 export SSH_KEY_PATH="~/.ssh/id_rsa"
 
+alias android='cd ~/Projects/fulcrum-android && emulator -avd Pixel_2_API_29 -netdelay none -netspeed full'
 alias bbd='brew bundle dump -f'
 alias c='clear'
 alias conf='/usr/bin/git --git-dir=/Users/caleb/.cfg-dotfiles/ --work-tree=/Users/caleb'
@@ -43,6 +44,7 @@ alias confloga='conf log --oneline --decorate --graph --all'
 alias home='~ && ls -la'
 alias gs='git switch'
 alias hidepaths='defaults write com.apple.finder _FXShowPosixPathInTitle -bool false; killall Finder'
+alias ios='cd ~/Projects/fulcrum-ios && open Fulcrum.xcworkspace'
 alias localhost='open -a "Brave Browser" http://localhost:3000/'
 alias lsa='ls -a'
 alias lsl='ls -l'
