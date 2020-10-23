@@ -8,7 +8,6 @@ tap "homebrew/cask-versions"
 tap "homebrew/core"
 tap "homebrew/services"
 tap "sass/sass"
-cask "adoptopenjdk8"
 brew "autoconf"
 brew "automake"
 brew "coreutils"
@@ -69,6 +68,7 @@ brew "zsh-completions"
 brew "heroku/brew/heroku"
 brew "sass/sass/sass"
 cask "1password"
+cask "adoptopenjdk8"
 cask "android-sdk"
 cask "firefox"
 cask "font-fira-code-nerd-font"
@@ -78,6 +78,7 @@ cask "postgres"
 cask "slack"
 cask "visual-studio-code"
 cask "wkhtmltopdf"
+mas "Amphetamine", id: 937984704
 mas "Be Focused", id: 973134470
 mas "Fantastical", id: 975937182
 mas "Flow", id: 1423210932
