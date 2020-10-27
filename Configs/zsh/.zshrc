@@ -63,7 +63,7 @@ touch_open() {
 		echo "need a file!" >&2
 		return 1
 	fi
-	: > "$1" && open "$1"
+	: > "$1" && vim "$1"
 }
 alias tp='trash-put'
 alias vimrc='nvim ~/.config/nvim/init.vim'
