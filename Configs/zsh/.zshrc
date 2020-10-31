@@ -34,7 +34,9 @@ source $ZSH/oh-my-zsh.sh
 
 export SSH_KEY_PATH="~/.ssh/id_rsa"
 
-alias android='cd ~/Projects/fulcrum-android && emulator -avd Pixel_2_API_29 -netdelay none -netspeed full'
+alias androiddebug='cd ~/Projects/fulcrum-android && ./gradlew runDebugApp'
+alias androidphone='cd ~/Projects/fulcrum-android && emulator -avd Pixel_2_API_29 -netdelay none -netspeed full'
+alias androidtab='cd ~/Projects/fulcrum-android && emulator -avd Samsung_Tab_A_7_API_29 -netdelay none -netspeed full'
 alias bbd='brew bundle dump -f'
 alias c='clear'
 alias conf='/usr/bin/git --git-dir=/Users/caleb/.cfg-dotfiles/ --work-tree=/Users/caleb'

@@ -1077,7 +1077,7 @@
 			<key>Close Sessions On End</key>
 			<true/>
 			<key>Columns</key>
-			<integer>220</integer>
+			<integer>316</integer>
 			<key>Command</key>
 			<string></string>
 			<key>Cursor Color</key>
@@ -1480,7 +1480,7 @@
 			<key>Right Option Key Sends</key>
 			<integer>0</integer>
 			<key>Rows</key>
-			<integer>57</integer>
+			<integer>71</integer>
 			<key>Screen</key>
 			<integer>-1</integer>
 			<key>Scrollback Lines</key>
@@ -5192,12 +5192,12 @@
 		<key>screenFrame</key>
 		<string>{{2560, 0}, {2560, 1440}}</string>
 		<key>topLeft</key>
-		<string>{2829, 595}</string>
+		<string>{3072, 739}</string>
 	</dict>
 	<key>NoSyncInstallationId</key>
 	<string>A5EC88CC-1AC8-4ED2-851B-2167A639E71E</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>225</integer>
+	<integer>233</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -5984,7 +5984,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2020-10-02T13:12:35Z</date>
+	<date>2020-10-30T13:29:05Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SUUpdateGroupIdentifier</key>

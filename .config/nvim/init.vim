@@ -1,4 +1,4 @@
-"syntax on
+syntax on
 
 set belloff=all
 set display+=lastline
