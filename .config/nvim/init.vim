@@ -114,13 +114,33 @@ let mapleader = "\<Space>"
 nmap <C-o> O<Esc>
 nmap <CR> o<Esc>
 
-" Coc-rename
+" Coc config
+let g:coc_global_extensions = [
+  \ 'coc-snippets',
+  \ 'coc-pairs',
+  \ 'coc-tsserver',
+  \ 'coc-eslint', 
+  \ 'coc-prettier', 
+  \ 'coc-json', 
+  \ ]
+" from readme
+" if hidden is not set, TextEdit might fail.
+set hidden " Some servers have issues with backup files, see #649 set nobackup set nowritebackup " Better display for messages set cmdheight=2 " You will have bad experience for diagnostic messages when it's default 4000.
+set updatetime=300
+
+" don't give |ins-completion-menu| messages.
+set shortmess+=c
+
+" always show signcolumns
+set signcolumn=yes
+
+" " Coc-rename
 nmap <leader>rr <Plug>(coc-rename)
 nnoremap <leader>prw :CocSearch <C-R>=expand("<cword>")<CR><CR>
 
 " toggle NERDTree
 map <leader>n :NERDTreeToggle<cr>
-
+ 
 " open FZF
 map <leader>f :FZF
 
@@ -147,3 +167,5 @@ map <C-H> <C-W><C-H>
 map <C-J> <C-W><C-J>
 map <C-K> <C-W><C-K>
 map <C-L> <C-W><C-L>
+
+" `gc` comments out a selection
