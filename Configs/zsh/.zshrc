@@ -5,6 +5,13 @@
 #          | (__| | \__ \ (_| | | | | (_| |  __/ |  \__ \ (_) | | | |
 #           \___|_| |___/\__,_|_| |_|\__,_|\___|_|  |___/\___/|_| |_|
 #===============================================================================
+#
+if type brew &>/dev/null; then
+  FPATH=$(brew --prefix)/share/zsh/site-functions:$FPATH
+
+  autoload -Uz compinit
+  compinit
+fi
 
 export ZSH=/Users/caleb/.oh-my-zsh
 export ANDROID_HOME=/Users/caleb/Library/Android/sdk
@@ -73,6 +80,7 @@ alias vim='nvim'
 alias writer='cd /Users/caleb/Library/Mobile\ Documents/27N4MQEA55~pro~writer/Documents && code .'
 alias zshrc='nvim ~/Configs/zsh/.zshrc'
 
+# . $(brew --prefix asdf)/asdf.sh
 . /usr/local/opt/asdf/asdf.sh
 . /usr/local/opt/asdf/etc/bash_completion.d/asdf.bash
 export PATH="/usr/local/sbin:$PATH"

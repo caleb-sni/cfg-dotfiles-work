@@ -115,15 +115,17 @@ let mapleader = "\<Space>"
 nmap <C-o> O<Esc>
 nmap <CR> o<Esc>
 
-" Coc config
-let g:coc_global_extensions = [
-  \ 'coc-snippets',
-  \ 'coc-pairs',
-  \ 'coc-tsserver',
-  \ 'coc-eslint', 
-  \ 'coc-prettier', 
-  \ 'coc-json', 
-  \ ]
+" ------------------
+" Coc config begin
+" ------------------
+" let g:coc_global_extensions = [
+"   \ 'coc-snippets',
+"   \ 'coc-pairs',
+"   \ 'coc-tsserver',
+"   \ 'coc-eslint', 
+"   \ 'coc-prettier', 
+"   \ 'coc-json', 
+"   \ ]
 
 inoremap <silent><expr> <TAB>
       \ pumvisible() ? "\<C-n>" :
@@ -136,9 +138,15 @@ function! s:check_back_space() abort
   return !col || getline('.')[col - 1]  =~# '\s'
 endfunction
 
-" from readme
+" from COC readme https://github.com/neoclide/coc.nvim
 " if hidden is not set, TextEdit might fail.
-set hidden " Some servers have issues with backup files, see #649 set nobackup set nowritebackup " Better display for messages set cmdheight=2 " You will have bad experience for diagnostic messages when it's default 4000.
+set hidden 
+
+" Some servers have issues with backup files, see #649 
+set nobackup 
+set nowritebackup 
+
+" Better display for messages set cmdheight=2 " You will have bad experience for diagnostic messages when it's default 4000.
 set updatetime=300
 
 " don't give |ins-completion-menu| messages.
@@ -146,6 +154,10 @@ set shortmess+=c
 
 " always show signcolumns
 set signcolumn=yes
+
+" ------------------
+" Coc config end
+" ------------------
 
 " `gc` comments out a selection
 
