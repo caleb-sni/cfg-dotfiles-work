@@ -596,6 +596,13 @@
 			<key>Text</key>
 			<string></string>
 		</dict>
+		<key>0x2f-0x100000</key>
+		<dict>
+			<key>Action</key>
+			<integer>12</integer>
+			<key>Text</key>
+			<string>++</string>
+		</dict>
 		<key>0x48-0x60000</key>
 		<dict>
 			<key>Action</key>
@@ -787,7 +794,7 @@
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>970 768 620 392 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>2560 0 2560 1417 2560 0 2560 1417 </string>
+	<string>3 4 1785 1089 0 0 1792 1097 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>2892 0 1785 1146 2560 0 2560 1417 </string>
 	<key>New Bookmarks</key>
@@ -5190,14 +5197,14 @@
 	<key>NoSyncFrame_SharedPreferences</key>
 	<dict>
 		<key>screenFrame</key>
-		<string>{{2560, 0}, {2560, 1440}}</string>
+		<string>{{0, 0}, {1792, 1120}}</string>
 		<key>topLeft</key>
-		<string>{3072, 739}</string>
+		<string>{269, 595}</string>
 	</dict>
 	<key>NoSyncInstallationId</key>
 	<string>A5EC88CC-1AC8-4ED2-851B-2167A639E71E</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>233</integer>
+	<integer>238</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -5984,7 +5991,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2020-10-30T13:29:05Z</date>
+	<date>2020-11-01T20:10:49Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SUUpdateGroupIdentifier</key>
