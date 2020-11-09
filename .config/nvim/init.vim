@@ -41,7 +41,6 @@ Plug 'sheerun/vim-polyglot'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-sensible'
-Plug 'theprimeagen/vim-be-good', {'do': './install.sh'}
 Plug '~/.vim/unmanaged-plugins/gruvbox-material'
 Plug '~/.vim/unmanaged-plugins/vim-javascript'
 Plug 'vim-airline/vim-airline'
@@ -78,6 +77,12 @@ endfunction
 autocmd! User GoyoEnter nested call <SID>goyo_enter()
 autocmd! User GoyoLeave nested call <SID>goyo_leave()
 
+"" Markdown Preview
+let g:mkdp_auto_start = 0
+let g:mkdp_refresh_slow = 0
+let g:mkdp_browser = 'Brave Browser'
+
+"" flash yank highlight = great visual feedback
 augroup highlight_yank
     autocmd!
     autocmd TextYankPost * silent! lua require'vim.highlight'.on_yank()
@@ -98,15 +103,11 @@ set background=dark
 let g:fzf_layout = { 'window': { 'width': 0.8, 'height': 0.8 } }
 let $FZF_DEFAULT_OPTS='--reverse'
 
-"" Markdown Preview
-let g:mkdp_auto_start = 0
-let g:mkdp_refresh_slow = 0
-let g:mkdp_browser = 'Brave Browser'
-
+"" Airline theme
 let g:airline_theme = 'gruvbox_material'
 
-
 " REMAPS
+" Leader
 let mapleader = "\<Space>"
 
 " make return and shift+return open  up new lines above and below respectively
@@ -123,6 +124,18 @@ let g:coc_global_extensions = [
   \ 'coc-prettier', 
   \ 'coc-json', 
   \ ]
+
+inoremap <silent><expr> <TAB>
+      \ pumvisible() ? "\<C-n>" :
+      \ <SID>check_back_space() ? "\<TAB>" :
+      \ coc#refresh()
+inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
+
+function! s:check_back_space() abort
+  let col = col('.') - 1
+  return !col || getline('.')[col - 1]  =~# '\s'
+endfunction
+
 " from readme
 " if hidden is not set, TextEdit might fail.
 set hidden " Some servers have issues with backup files, see #649 set nobackup set nowritebackup " Better display for messages set cmdheight=2 " You will have bad experience for diagnostic messages when it's default 4000.
@@ -133,6 +146,8 @@ set shortmess+=c
 
 " always show signcolumns
 set signcolumn=yes
+
+" `gc` comments out a selection
 
 " " Coc-rename
 nmap <leader>rr <Plug>(coc-rename)
@@ -167,5 +182,3 @@ map <C-H> <C-W><C-H>
 map <C-J> <C-W><C-J>
 map <C-K> <C-W><C-K>
 map <C-L> <C-W><C-L>
-
-" `gc` comments out a selection
