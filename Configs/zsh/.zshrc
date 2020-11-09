@@ -16,6 +16,7 @@ fi
 export ZSH=/Users/caleb/.oh-my-zsh
 export ANDROID_HOME=/Users/caleb/Library/Android/sdk
 export PATH=$ANDROID_HOME/platform-tools:$ANDROID_HOME/tools/bin:$ANDROID_HOME/emulator:$PATH
+export DOCKER_PG=1
 
 ZSH_THEME=amuse
 
@@ -80,7 +81,7 @@ alias vim='nvim'
 alias writer='cd /Users/caleb/Library/Mobile\ Documents/27N4MQEA55~pro~writer/Documents && code .'
 alias zshrc='nvim ~/Configs/zsh/.zshrc'
 
-# . $(brew --prefix asdf)/asdf.sh
-. /usr/local/opt/asdf/asdf.sh
-. /usr/local/opt/asdf/etc/bash_completion.d/asdf.bash
+. $(brew --prefix asdf)/asdf.sh
+# . /usr/local/opt/asdf/asdf.sh
+# . /usr/local/opt/asdf/etc/bash_completion.d/asdf.bash
 export PATH="/usr/local/sbin:$PATH"
