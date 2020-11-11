@@ -20,14 +20,22 @@ brew "asdf"
 brew "gettext"
 brew "sqlite"
 brew "glib"
+brew "python@3.8", link: true
 brew "cmake"
 brew "curl"
 brew "exercism"
+brew "ruby"
 brew "fastlane"
 brew "pkg-config"
+brew "unbound"
+brew "gobject-introspection"
+brew "libass"
+brew "srt"
 brew "ffmpeg"
 brew "forego"
 brew "fortune"
+brew "libxml2"
+brew "libpq"
 brew "numpy"
 brew "poppler"
 brew "gdal"
@@ -79,11 +87,9 @@ cask "slack"
 cask "visual-studio-code"
 cask "wkhtmltopdf"
 mas "Amphetamine", id: 937984704
-mas "Be Focused", id: 973134470
 mas "Fantastical", id: 975937182
 mas "Flow", id: 1423210932
 mas "Jira", id: 1475897096
 mas "Keynote", id: 409183694
 mas "Spark", id: 1176895641
 mas "Trello", id: 1278508951
-mas "Xcode", id: 497799835
