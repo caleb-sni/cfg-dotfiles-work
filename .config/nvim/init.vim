@@ -1,9 +1,16 @@
+"    ____      _ __        _
+"   /  _/___  (_) /__   __(_)___ ___
+"   / // __ \/ / __/ | / / / __ `__ \
+" _/ // / / / / /__| |/ / / / / / / /
+"/___/_/ /_/_/\__(_)___/_/_/ /_/ /_/
+
+source $HOME/.config/nvim/plug-config/coc.vim
+
 syntax on
 
 set belloff=all
 set display+=lastline
 set incsearch
-set nobackup
 set noerrorbells
 set noswapfile
 set nowrap
@@ -112,53 +119,13 @@ let mapleader = "\<Space>"
 
 " make return and shift+return open  up new lines above and below respectively
 " without going into insert mode.
-nmap <C-o> O<Esc>
+" nmap <C-o> O<Esc>
 nmap <CR> o<Esc>
 
 " ------------------
-" Coc config begin
+" Coc config in ~/.config/nvim/plug-config/
 " ------------------
-" let g:coc_global_extensions = [
-"   \ 'coc-snippets',
-"   \ 'coc-pairs',
-"   \ 'coc-tsserver',
-"   \ 'coc-eslint', 
-"   \ 'coc-prettier', 
-"   \ 'coc-json', 
-"   \ ]
-
-inoremap <silent><expr> <TAB>
-      \ pumvisible() ? "\<C-n>" :
-      \ <SID>check_back_space() ? "\<TAB>" :
-      \ coc#refresh()
-inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
-
-function! s:check_back_space() abort
-  let col = col('.') - 1
-  return !col || getline('.')[col - 1]  =~# '\s'
-endfunction
-
-" from COC readme https://github.com/neoclide/coc.nvim
-" if hidden is not set, TextEdit might fail.
-set hidden 
-
-" Some servers have issues with backup files, see #649 
-set nobackup 
-set nowritebackup 
-
-" Better display for messages set cmdheight=2 " You will have bad experience for diagnostic messages when it's default 4000.
-set updatetime=300
-
-" don't give |ins-completion-menu| messages.
-set shortmess+=c
-
-" always show signcolumns
-set signcolumn=yes
-
-" ------------------
-" Coc config end
-" ------------------
-
+"
 " `gc` comments out a selection
 
 " " Coc-rename
