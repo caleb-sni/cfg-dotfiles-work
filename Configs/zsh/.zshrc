@@ -25,7 +25,7 @@ export ZSH=/Users/caleb/.oh-my-zsh
 export ANDROID_HOME=/Users/caleb/Library/Android/sdk
 export PATH=$ANDROID_HOME/platform-tools:$ANDROID_HOME/tools/bin:$ANDROID_HOME/emulator:$PATH
 export DOCKER_PG=1
-export HOMEBREW_GITHUB_API_TOKEN=40f0ec7a7e3b070323fd42fb9c4f3bf2302df878
+export HOMEBREW_GITHUB_API_TOKEN=$HOME/.config/homebrew-github-api-token
 
 ZSH_THEME=amuse
 
