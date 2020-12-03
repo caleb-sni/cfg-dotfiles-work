@@ -98,7 +98,7 @@ autocmd! User GoyoLeave nested call <SID>goyo_leave()
 "" Markdown Preview
 let g:mkdp_auto_start = 0
 let g:mkdp_refresh_slow = 0
-let g:mkdp_browser = 'Brave Browser'
+let g:mkdp_browser = 'Firefox Developer Edition'
 
 "" flash yank highlight = great visual feedback
 augroup highlight_yank
