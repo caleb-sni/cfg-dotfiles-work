@@ -2,5 +2,5 @@ erlang 22.1.8
 elixir 1.9.4
 ruby 2.6.2
 nodejs 12.8.1
-python 2.7.17
+python 3.9.0 3.8.6 2.7.17 
 yarn 1.22.4

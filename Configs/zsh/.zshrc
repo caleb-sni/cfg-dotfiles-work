@@ -21,6 +21,7 @@ if type brew &>/dev/null; then
   compinit
 fi
 
+export AWS_PROFILE=chaos
 export ZSH=/Users/caleb/.oh-my-zsh
 export ANDROID_HOME=/Users/caleb/Library/Android/sdk
 export PATH=$ANDROID_HOME/platform-tools:$ANDROID_HOME/tools/bin:$ANDROID_HOME/emulator:$PATH
@@ -71,6 +72,7 @@ alias hidepaths='defaults write com.apple.finder _FXShowPosixPathInTitle -bool f
 alias hb='hub browse'
 alias ios='cd ~/Projects/fulcrum-ios && open Fulcrum.xcworkspace'
 alias localhost='open -a "Brave Browser" http://localhost:3000/'
+alias loginaws='saml2aws login --role="arn:aws:iam::280296955917:role/standard" --skip-prompt && aws ecr get-login-password --region us-east-1 --profile chaos | docker login --username AWS --password-stdin 833023401363.dkr.ecr.us-east-1.amazonaws.com'
 alias lsa='ls -a'
 alias lsl='ls -l'
 alias myhub='open https://github.com/cfsanderson-fulcrum' 
