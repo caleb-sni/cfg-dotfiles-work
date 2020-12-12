@@ -93,8 +93,8 @@ touch_open() {
 	: > "$1" && vim "$1"
 }
 alias tp='trash-put'
-alias vimrc='nvim ~/.config/nvim/init.vim'
 alias vim='nvim'
+alias vimrc='nvim ~/.config/nvim/init.vim'
 alias writer='cd /Users/caleb/Library/Mobile\ Documents/27N4MQEA55~pro~writer/Documents && code .'
 alias zshrc='nvim ~/Configs/zsh/.zshrc'
 
