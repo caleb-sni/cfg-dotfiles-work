@@ -13,6 +13,7 @@
 #                       
 #===============================================================================
 
+# Aliases moved to ~/.oh-my-zsh/custom/aliases.zsh and accessible with "alius" alias.
 
 if type brew &>/dev/null; then
   FPATH=$(brew --prefix)/share/zsh/site-functions:$FPATH
@@ -22,18 +23,18 @@ if type brew &>/dev/null; then
 fi
 
 export AWS_PROFILE=chaos
-export ZSH=/Users/caleb/.oh-my-zsh
-export ANDROID_HOME=/Users/caleb/Library/Android/sdk
+export ZSH=$HOME/.oh-my-zsh
+export ANDROID_HOME=$HOME/Library/Android/sdk
 export PATH=$ANDROID_HOME/platform-tools:$ANDROID_HOME/tools/bin:$ANDROID_HOME/emulator:$PATH
 export DOCKER_PG=1
-export HOMEBREW_GITHUB_API_TOKEN=$HOME/.config/homebrew-github-api-token
+export HOMEBREW_GITHUB_API_TOKEN=a141d964915b8ddd3ce74dfd7ea970f3f7829765
 
-ZSH_THEME=amuse
+ZSH_THEME="agnoster"
 
 HIST_STAMPS="yyyy-mm-dd"
 HISTSIZE=10000
 SAVEHIST=10000
-HISTFILE=~/.cache/zsh/history
+HISTFILE=$HOME/.cache/zsh/history
 
 ENABLE_CORRECTION="false"
 COMPLETION_WAITING_DOTS="true"
@@ -44,17 +45,18 @@ plugins=(
     osx 
     vi-mode 
     web-search 
+    zsh-completions
     zsh-syntax-highlighting
 )
 
-source $HOME/.bash_profile
+# source $HOME/.bash_profile
 source $ZSH/oh-my-zsh.sh
 
 export SSH_KEY_PATH="~/.ssh/id_rsa"
 
-# Aliases moved to ~/.oh-my-zsh/custom/aliases.zsh and accessible with "alius" alias.
 
 . $(brew --prefix asdf)/asdf.sh
 # . /usr/local/opt/asdf/asdf.sh
 # . /usr/local/opt/asdf/etc/bash_completion.d/asdf.bash
+
 export PATH="/usr/local/sbin:$PATH"
