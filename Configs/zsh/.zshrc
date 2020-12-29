@@ -27,7 +27,6 @@ export ZSH=$HOME/.oh-my-zsh
 export ANDROID_HOME=$HOME/Library/Android/sdk
 export PATH=$ANDROID_HOME/platform-tools:$ANDROID_HOME/tools/bin:$ANDROID_HOME/emulator:$PATH
 export DOCKER_PG=1
-export HOMEBREW_GITHUB_API_TOKEN=a141d964915b8ddd3ce74dfd7ea970f3f7829765
 
 ZSH_THEME="agnoster"
 
