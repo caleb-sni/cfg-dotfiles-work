@@ -11,6 +11,7 @@ alias confstat='conf status'
 alias conflog='conf log'
 alias confloga='conf log --oneline --decorate --graph --all'
 alias chrome='open -a "Google Chrome"'
+alias darkdown='cd $HOME/.vim/plugged/markdown-preview.nvim && gs darkdown'
 alias firefox='open -a "Firefox"'
 alias gs='git switch'
 alias home='~ && ls -la'
@@ -19,6 +20,12 @@ alias hb='hub browse'
 alias lsa='ls -a'
 alias lsl='ls -l'
 alias myhub='open https://github.com/cfsanderson-fulcrum' 
+alias mkcdir=mkdir_cd
+mkdir_cd() {
+    mkdir -p -- "$1" &&
+    cd -P -- "$1" &&
+    ls -la
+}
 alias preview='open -a Preview'
 alias notes='cd ~/Projects/.notes && nvim .'
 alias showpaths='defaults write com.apple.finder _FXShowPosixPathInTitle -bool true; killall Finder'
