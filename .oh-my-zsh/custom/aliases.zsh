@@ -49,7 +49,6 @@ alias zshrc='nvim ~/Configs/zsh/.zshrc'
 alias androiddebug='cd ~/Projects/fulcrum-android && ./gradlew runDebugApp'
 alias androidphone='cd ~/Projects/fulcrum-android && emulator -avd Pixel_2_API_29 -netdelay none -netspeed full'
 alias androidtab='cd ~/Projects/fulcrum-android && emulator -avd Samsung_Tab_A_7_API_29 -netdelay none -netspeed full'
-alias debug='./gradlew runDebugApp'
 
 # Fulcrum iOS
 alias ios='cd ~/Projects/fulcrum-ios && open Fulcrum.xcworkspace'
