@@ -92,11 +92,9 @@ cask "wkhtmltopdf"
 mas "Amphetamine", id: 937984704
 mas "Clock mini", id: 867539680
 mas "DuckDuckGo Privacy Essentials", id: 1482920575
-mas "Fantastical", id: 975937182
 mas "Flow", id: 1423210932
 mas "Jira", id: 1475897096
 mas "Keynote", id: 409183694
 mas "Okta Extension App", id: 1439967473
 mas "Spark", id: 1176895641
-mas "Trello", id: 1278508951
 mas "Xcode", id: 497799835
