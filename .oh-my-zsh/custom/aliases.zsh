@@ -1,5 +1,6 @@
 # Aliases
 
+alias alacritty='vim ~/.config/alacritty/alacritty.yml'
 alias alius='vim ~/.oh-my-zsh/custom/aliases.zsh'
 alias bbd='brew bundle dump -f'
 alias brave='open -a "Brave Browser"'

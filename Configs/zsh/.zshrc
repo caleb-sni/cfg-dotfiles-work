@@ -5,12 +5,6 @@
 #         / /__/ __(__  ) /_/ / / / / /_/ /  __/ /  (__  ) /_/ / / / /
 #         \___/_/ /____/\__,_/_/ /_/\__,_/\___/_/  /____/\____/_/ /_/ 
 #                                                                     
-#                                    __             
-#                        ____  _____/ /_  __________
-#                       /_  / / ___/ __ \/ ___/ ___/
-#                        / /_(__  ) / / / /  / /__  
-#                       /___/____/_/ /_/_/   \___/  
-#                       
 #===============================================================================
 
 # Aliases moved to ~/.oh-my-zsh/custom/aliases.zsh and accessible with "alius" alias.
@@ -59,3 +53,4 @@ export SSH_KEY_PATH="~/.ssh/id_rsa"
 # . /usr/local/opt/asdf/etc/bash_completion.d/asdf.bash
 
 export PATH="/usr/local/sbin:$PATH"
+neofetch
