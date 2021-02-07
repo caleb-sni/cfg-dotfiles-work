@@ -1,4 +1,12 @@
-# Configuration for Alacritty
+#==============================================================================
+#                           __                _ __  __
+#                    ____ _/ /___ ___________(_) /_/ /___  __
+#                   / __ `/ / __ `/ ___/ ___/ / __/ __/ / / /
+#                  / /_/ / / /_/ / /__/ /  / / /_/ /_/ /_/ /
+#                  \__,_/_/\__,_/\___/_/  /_/\__/\__/\__, /
+#                                                   /____/
+#==============================================================================
+#                               @cfsanderson
 
 # Window Customizations
 window:
@@ -86,12 +94,6 @@ key_bindings:
 bar:
   background: "#c5c8c6"
   foreground: "#1d1f21"
-# Dim colors
-# Indexed Colors
-# Bell
-
-# When set to `true`, selected text will be copied to the primary clipboard.
-#save_to_clipboard: false
 
 shell:
   program: /bin/zsh
