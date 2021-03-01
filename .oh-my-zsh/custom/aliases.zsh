@@ -19,8 +19,7 @@ alias gs='git switch'
 alias home='cd $HOME && clear && neofetch'
 alias hidepaths='defaults write com.apple.finder _FXShowPosixPathInTitle -bool false; killall Finder'
 alias hb='hub browse'
-alias lsa='ls -a'
-alias lsl='ls -l'
+alias l='ls -lA'
 alias myhub='open https://github.com/cfsanderson-fulcrum' 
 alias mkcdir=mkdir_cd
 mkdir_cd() {
@@ -44,6 +43,7 @@ touch_open() {
 }
 alias tp='trash-put'
 alias vim='nvim'
+alias ogvim='vim'
 
 # Configs
 alias conf='/usr/bin/git --git-dir=/Users/caleb/.cfg-dotfiles/ --work-tree=/Users/caleb'
