@@ -60,6 +60,7 @@ alias confzsh='nvim $HOME/Configs/zsh/.zshrc'
 # Fulcrum Android
 alias androiddebug='cd $HOME/Projects/fulcrum-android && ./gradlew runDebugApp'
 alias androidphone='cd $HOME/Projects/fulcrum-android && emulator -avd Pixel_2_API_29 -netdelay none -netspeed full'
+alias androidphonexl='cd $HOME/Projects/fulcrum-android && emulator -avd Pixel_2_XL_API_29 -netdelay none -netspeed full'
 alias androidtab='cd $HOME/Projects/fulcrum-android && emulator -avd Samsung_Tab_A_7_API_29 -netdelay none -netspeed full'
 
 # Fulcrum iOS
