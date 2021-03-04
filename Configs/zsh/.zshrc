@@ -8,7 +8,7 @@
 #===============================================================================
 #                               @cfsanderson
 
-# Aliases moved to ~/.oh-my-zsh/custom/aliases.zsh and accessible with "alius" alias.
+# Aliases moved to ~/.oh-my-zsh/custom/aliases.zsh and accessible with "confalias" alias.
 
 if type brew &>/dev/null; then
   FPATH=$(brew --prefix)/share/zsh/site-functions:$FPATH
