@@ -17,11 +17,12 @@ if type brew &>/dev/null; then
   compinit
 fi
 
-export AWS_PROFILE=chaos
-export ZSH=$HOME/.oh-my-zsh
 export ANDROID_HOME=$HOME/Library/Android/sdk
-export PATH=$ANDROID_HOME/platform-tools:$ANDROID_HOME/tools/bin:$ANDROID_HOME/emulator:$PATH
+export AWS_PROFILE=chaos
 export DOCKER_PG=1
+export HOMEBREW_GITHUB_API_TOKEN=$HOME/Configs/tokens/.github-homebrew-token
+export PATH=$ANDROID_HOME/platform-tools:$ANDROID_HOME/tools/bin:$ANDROID_HOME/emulator:$PATH
+export ZSH=$HOME/.oh-my-zsh
 
 ZSH_THEME="agnoster"
 
