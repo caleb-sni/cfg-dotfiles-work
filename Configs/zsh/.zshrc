@@ -50,7 +50,6 @@ source $ZSH/oh-my-zsh.sh
 
 export SSH_KEY_PATH="~/.ssh/id_rsa"
 
-
 . $(brew --prefix asdf)/asdf.sh
 # . /usr/local/opt/asdf/asdf.sh
 # . /usr/local/opt/asdf/etc/bash_completion.d/asdf.bash
