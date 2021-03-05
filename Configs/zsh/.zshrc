@@ -20,7 +20,6 @@ fi
 export ANDROID_HOME=$HOME/Library/Android/sdk
 export AWS_PROFILE=chaos
 export DOCKER_PG=1
-#export HOMEBREW_GITHUB_API_TOKEN=62a7cad01298f2f50b3d58f63549c16f7c6d4328
 export PATH=$ANDROID_HOME/platform-tools:$ANDROID_HOME/tools/bin:$ANDROID_HOME/emulator:$PATH
 export ZSH=$HOME/.oh-my-zsh
 
