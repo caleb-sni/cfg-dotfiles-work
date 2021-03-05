@@ -8,6 +8,7 @@
 #===============================================================================
 #                               @cfsanderson
 
+# General
 alias bbd='brew bundle dump -f'
 alias brave='open -a "Brave Browser"'
 alias c='clear'
@@ -27,6 +28,7 @@ mkdir_cd() {
     cd -P -- "$1" &&
     ls -la
 }
+alias music='cmus'
 alias notes='cd $HOME/Projects/.notes && nvim .'
 alias preview='open -a Preview'
 alias showpaths='defaults write com.apple.finder _FXShowPosixPathInTitle -bool true; killall Finder'
