@@ -65,7 +65,8 @@ alias androidpixel2='cd $HOME/Projects/fulcrum-android && emulator -avd Pixel_2_
 alias androidpixel2xl='cd $HOME/Projects/fulcrum-android && emulator -avd Pixel_2_XL_API_29 -netdelay none -netspeed full'
 alias androidpixel4='cd $HOME/Projects/fulcrum-android && emulator -avd Pixel_4_API_29 -netdelay none -netspeed full'
 alias androidtabsmall='cd $HOME/Projects/fulcrum-android && emulator -avd Samsung_Tab_A_7_API_29 -netdelay none -netspeed full'
-alias androidtablarge='cd $HOME/Projects/fulcrum-android && emulator -avd Pixel_C_API_29 -netdelay none -netspeed full'
+alias androidtabpixelc='cd $HOME/Projects/fulcrum-android && emulator -avd Pixel_C_API_29 -netdelay none -netspeed full'
+alias androidtabnexus9='cd $HOME/Projects/fulcrum-android && emulator -avd Nexus_9_API_29 -netdelay none -netspeed full'
 
 # Fulcrum iOS
 alias ios='cd $HOME/Projects/fulcrum-ios && open Fulcrum.xcworkspace'
