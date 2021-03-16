@@ -54,6 +54,7 @@ Plug '~/.vim/unmanaged-plugins/gruvbox-material'
 Plug 'vim-airline/vim-airline'
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plug 'ryanoasis/vim-devicons'
+Plug '~/.vim/unmanaged-plugins/vim-css-color'
 
 call plug#end()
 
