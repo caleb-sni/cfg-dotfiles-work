@@ -20,6 +20,7 @@ alias gs='git switch'
 alias home='cd $HOME && clear && neofetch'
 alias hidepaths='defaults write com.apple.finder _FXShowPosixPathInTitle -bool false; killall Finder'
 alias hb='hub browse'
+alias jsfast='bundle exec jekyll serve --watch --limit_posts 1'
 alias l='ls -lA'
 alias myhub='open https://github.com/cfsanderson-fulcrum' 
 alias mkcdir=mkdir_cd

@@ -25,7 +25,7 @@ export ZSH=$HOME/.oh-my-zsh
 
 source $HOME/Configs/tokens/.github-homebrew-token
 
-ZSH_THEME="agnoster"
+ZSH_THEME="robbyrussell"
 
 HIST_STAMPS="yyyy-mm-dd"
 HISTSIZE=10000
