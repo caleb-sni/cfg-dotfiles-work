@@ -25,7 +25,7 @@ export ZSH=$HOME/.oh-my-zsh
 
 source $HOME/Configs/tokens/.github-homebrew-token
 
-ZSH_THEME="robbyrussell"
+ZSH_THEME="agnoster"
 
 HIST_STAMPS="yyyy-mm-dd"
 HISTSIZE=10000
@@ -51,6 +51,7 @@ plugins=(
     web-search 
     zsh-completions
     zsh-syntax-highlighting
+    asdf
 )
 
 # source $HOME/.bash_profile
