@@ -100,3 +100,9 @@ shell:
   program: /bin/zsh
   args:
     - --login
+
+key_bindings:
+- { key: PageUp,   mods: Shift,   action: ScrollPageUp   }
+- { key: PageDown, mods: Shift,   action: ScrollPageDown }
+- { key: End,      mods: Shift,   action: ScrollToBottom }
+- { key: Home,     mods: Shift,   action: ScrollToTop    }
