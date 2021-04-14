@@ -41,7 +41,8 @@ chaos() {
   unset AWS_DEFAULT_REGION
   export AWS_DEFAULT_REGION=us-east-2
   saml2aws login -p $AWS_PROFILE --role="arn:aws:iam::280296955917:role/standard" --skip-prompt
-  aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 833023401363.dkr.ecr.us-east-1.amazonaws.com}
+  aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 833023401363.dkr.ecr.us-east-1.amazonaws.com
+}
 
 plugins=(
     git 
