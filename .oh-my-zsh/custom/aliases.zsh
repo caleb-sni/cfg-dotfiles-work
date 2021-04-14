@@ -75,4 +75,4 @@ alias ios='cd $HOME/Projects/fulcrum-ios && open Fulcrum.xcworkspace'
 # Fulcrum web
 alias loginaws='saml2aws login --role="arn:aws:iam::280296955917:role/standard" --skip-prompt && aws ecr get-login-password --region us-east-1 --profile chaos | docker login --username AWS --password-stdin 833023401363.dkr.ecr.us-east-1.amazonaws.com'
 alias mailcatcher='kubectl -n tools port-forward svc/mailcatcher 1080:1080'
-alias fulstart='cd $HOME/Projects/fulcrum/ && chaos && skaffold dev'
+alias fulstart='cd $HOME/Projects/fulcrum/ && chaos && skaffold delete && skaffold dev'
