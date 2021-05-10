@@ -65,4 +65,4 @@ export SSH_KEY_PATH="~/.ssh/id_rsa"
 # . /usr/local/opt/asdf/etc/bash_completion.d/asdf.bash
 
 export PATH="/usr/local/sbin:$PATH"
-neofetch
+neofetch --ascii $HOME/.config/neofetch/vader.txt
