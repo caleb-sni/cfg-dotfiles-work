@@ -24,6 +24,7 @@ brew "awscli"
 brew "gettext"
 brew "pkg-config"
 brew "cairo"
+brew "clang-format"
 brew "cmake"
 brew "unbound"
 brew "srt"
@@ -37,6 +38,7 @@ brew "forego"
 brew "fortune"
 brew "geos"
 brew "libdap"
+brew "proj@7"
 brew "libpq"
 brew "gdal"
 brew "git"
@@ -45,10 +47,12 @@ brew "gnupg"
 brew "helm"
 brew "htop"
 brew "hub"
+brew "ilmbase"
 brew "imagemagick"
 brew "imagemagick@6"
 brew "kubernetes-cli"
 brew "libxslt"
+brew "lynx"
 brew "mas"
 brew "mysql"
 brew "neofetch"
@@ -96,11 +100,3 @@ cask "postgres"
 cask "slack"
 cask "visual-studio-code"
 cask "wkhtmltopdf"
-mas "Amphetamine", id: 937984704
-mas "Clock mini", id: 867539680
-mas "DuckDuckGo Privacy Essentials", id: 1482920575
-mas "Flow", id: 1423210932
-mas "Keynote", id: 409183694
-mas "Okta Extension App", id: 1439967473
-mas "Spark", id: 1176895641
-mas "Xcode", id: 497799835
