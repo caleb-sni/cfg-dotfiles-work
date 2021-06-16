@@ -73,6 +73,8 @@ alias androidtabnexus9='cd $HOME/Projects/fulcrum-android && emulator -avd Nexus
 alias ios='cd $HOME/Projects/fulcrum-ios && open Fulcrum.xcworkspace'
 
 # Fulcrum web
+alias charleswatch='cd ~/Projects/fulcrum/lib/assets/fulcrum-components && yarn watch'
+alias charlesupdate='cd ~/Projects/charles/ && node entrypoints-local.js > ~/Projects/charles/FulcrumMapLocal.xml'
 alias loginaws='saml2aws login --role="arn:aws:iam::280296955917:role/standard" --skip-prompt && aws ecr get-login-password --region us-east-1 --profile chaos | docker login --username AWS --password-stdin 833023401363.dkr.ecr.us-east-1.amazonaws.com'
 alias mailcatcher='kubectl -n tools port-forward svc/mailcatcher 1080:1080'
 alias fulstart='cd $HOME/Projects/fulcrum/ && chaos && skaffold delete ; skaffold dev'
