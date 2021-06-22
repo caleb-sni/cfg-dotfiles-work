@@ -52,6 +52,7 @@ brew "imagemagick"
 brew "imagemagick@6"
 brew "kubernetes-cli"
 brew "libxslt"
+brew "luajit", args: ["HEAD"]
 brew "lynx"
 brew "mas"
 brew "mysql"
@@ -100,3 +101,13 @@ cask "postgres"
 cask "slack"
 cask "visual-studio-code"
 cask "wkhtmltopdf"
+mas "Amphetamine", id: 937984704
+mas "Clock mini", id: 867539680
+mas "Developer", id: 640199958
+mas "DuckDuckGo Privacy Essentials", id: 1482920575
+mas "Flow", id: 1423210932
+mas "Jira", id: 1475897096
+mas "Keynote", id: 409183694
+mas "Okta Extension App", id: 1439967473
+mas "Spark", id: 1176895641
+mas "Xcode", id: 497799835
